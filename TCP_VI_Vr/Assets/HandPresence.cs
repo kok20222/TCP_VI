@@ -8,6 +8,10 @@ public class HandPresence : MonoBehaviour
     int framesToSkip;
 
     private InputDevice targetDevice;
+
+    public List<GameObject> controllerPrefabs;
+
+    private GameObject spawnedController;
      //Start is called before the first frame update
     void Start()
     {
@@ -49,6 +53,18 @@ public class HandPresence : MonoBehaviour
         if(devices.Count > 0){
 
             targetDevice = devices[0];
+            GameObject prefab = controllerPrefabs.Find(controller => controller.name == targetDevice.name);
+            if(prefab){
+
+                spawnedController = Instantiate(prefab, transform);
+
+            }
+            else {
+
+                Debug.LogError("não tem um modelo que deseja");
+                spawnedController = Instantiate(controllerPrefabs[0], transform);
+
+            }
 
         }
 
