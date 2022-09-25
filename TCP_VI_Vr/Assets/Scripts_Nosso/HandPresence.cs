@@ -16,11 +16,15 @@ public class HandPresence : MonoBehaviour
     public GameObject handModelPrefab;
 
     private GameObject spawnedHandModel;
+
+    private Animator handAnimator;
      //Start is called before the first frame update
     void Start()
     {
         
         framesToSkip = 10;
+
+        
         
     }
 
@@ -61,33 +65,70 @@ public class HandPresence : MonoBehaviour
             spawnedHandModel = Instantiate(handModelPrefab,transform);
         }
 
+        handAnimator = spawnedHandModel.GetComponent<Animator>();
         framesToSkip = 0;
         }
 
+        if(framesToSkip == 0){{
+
+             UpdateHandAnimation();
+
+        }}
+       
 
 
 
-
-
-        //targetDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool primaryButtonValue);
+       // targetDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool primaryButtonValue);
        // if(primaryButtonValue){
 
-       //           Debug.Log("pressing Primary Button");
+         //        Debug.Log("pressing Primary Button");
        // }
            
 
        // targetDevice.TryGetFeatureValue(CommonUsages.trigger, out float triggerValue);
-        //if(triggerValue > 0.1f){
+       // if(triggerValue > 0.1f){
 
-         //   Debug.Log("Trigger pressed" + triggerValue);
-        //}
+          // Debug.Log("Trigger pressed" + triggerValue);
+       // }
 
 
        // targetDevice.TryGetFeatureValue(CommonUsages.primary2DAxis, out Vector2 primary2DAxisValue);
-        //if(primary2DAxisValue != Vector2.zero){
+       // if(primary2DAxisValue != Vector2.zero){
 
-         //   Debug.Log("Primary Touchpad" + primary2DAxisValue);
-        //}
+           //Debug.Log("Primary Touchpad" + primary2DAxisValue);
+       // }
 
     }
+
+    void UpdateHandAnimation(){
+
+        if(targetDevice.TryGetFeatureValue(CommonUsages.trigger, out float triggerValue )){
+
+            handAnimator.SetFloat("Trigger", triggerValue);
+
+        }
+        else 
+        {
+
+            handAnimator.SetFloat("Trigger", 0);
+
+        }
+
+
+
+        if(targetDevice.TryGetFeatureValue(CommonUsages.grip, out float gripValue )){
+
+            handAnimator.SetFloat("Grip", gripValue);
+
+        }
+        else 
+        {
+
+            handAnimator.SetFloat("Grip", 0);
+
+        }
+
+    }
+
+
 }
