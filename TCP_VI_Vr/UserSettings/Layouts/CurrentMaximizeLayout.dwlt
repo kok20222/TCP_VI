@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 5808
+  controlID: 5990
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 5809
+  controlID: 5991
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 5810
+  controlID: 5992
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -228,7 +228,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: aef1ffff02f2ffff2efbffff
+      m_ExpandedIDs: 9469ffff9669ffff9e69ffffe66affff2e73ffffaef1ffff02f2ffff2efbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -509,9 +509,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -1.776932, y: -4.9032836, z: 6.7958503}
+    m_Target: {x: 0.91766, y: -1.7532146, z: 10.046082}
     speed: 2
-    m_Value: {x: -1.776932, y: -4.9032836, z: 6.7958503}
+    m_Value: {x: 0.91766, y: -1.7532146, z: 10.046082}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -558,13 +558,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.34939474, y: 0.029513689, z: -0.011000405, w: -0.9364755}
+    m_Target: {x: -0.13468295, y: -0.011887885, z: 0.001626256, w: -0.99084544}
     speed: 2
-    m_Value: {x: -0.3493851, y: 0.029512877, z: -0.011000102, w: -0.9364497}
+    m_Value: {x: -0.13467903, y: -0.011887539, z: 0.0016262088, w: -0.9908166}
   m_Size:
-    m_Target: 4.638624
+    m_Target: 6.796314
     speed: 2
-    m_Value: 4.638624
+    m_Value: 6.796314
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1618,21 +1618,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: "D:\\organiza\xE7\xE3o2\\MeuJogo\\unity\\TCP_VI\\TCP_VI_Vr"
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 20}
-    m_SelectedIDs: 48740000
-    m_LastClickedID: 29768
+    m_SelectedIDs: 0a760000
+    m_LastClickedID: 30218
     m_ExpandedIDs: 000000004874000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1686,9 +1686,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: aef1ffff
-    m_LastClickedInstanceID: -3666
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 9669ffff
+    m_LastClickedInstanceID: -38506
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1809,7 +1809,7 @@ MonoBehaviour:
     m_CachedPref: -363
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: -3666
+  m_LastInspectedObjectInstanceID: -38506
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
