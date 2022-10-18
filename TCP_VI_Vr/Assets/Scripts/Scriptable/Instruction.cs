@@ -1,35 +1,33 @@
 using ActivitSystem;
+using InstructionSystem;
 using System.Collections;
 using System.Collections.Generic;
 using TargetSystem;
 using UnityEngine;
 
+
 namespace InstructionSystem
 {
-    [CreateAssetMenu(fileName = "ActivitysInstruction", menuName = "Activity/Instruction", order = 1)]
+    [CreateAssetMenu(fileName = "InstructionSystem", menuName = "Activity/Instruction", order = 1)]
     public class Instruction : ScriptableObject
     {
-        public string description;
-        public long idealTime;
-        [SerializeField] public List<Pair> NextStep;
-        private Dictionary<string, Instruction> next;
-        public Attribbuts attribbuts;
-        private void Awake()
-        {
-            if (NextStep != null)
-            {
-                next = new Dictionary<string, Instruction>();
-                foreach (Pair p in NextStep)
-                {
-                    next[p.Key] = p.value;
-                }
-            }
-        }
+        public bool punishment;
+        public int point;
+        [SerializeField] public Destiction destiction;
+
     }
     [System.Serializable]
-    public struct Pair
+    public struct Destiction
     {
-        public string Key;
-        public Instruction value;
+        public List<State> nextState;
+        [SerializeField] public List<Mandatory> mandatory;
+        public List<GameObject> bonus;
+    }
+
+    [System.Serializable]
+    public struct Mandatory
+    {
+        public bool target;
+        public GameObject element;
     }
 }

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 483f33546b29cff46b0212750af78b73, type: 3}
+  m_Name: WashingClothes_1
+  m_EditorClassIdentifier: 
+  punishment: 0
+  point: 10
+  destiction:
+    nextState: 010000000900000002000000
+    mandatory:
+    - target: 1
+      element: {fileID: 3815022803249457889, guid: c657c70968f29114fb1f82eaf1263845,
+        type: 3}
+    - target: 0
+      element: {fileID: 8343072366967079577, guid: 037449f1f063aa04daf78ea32611dd2e,
+        type: 3}
+    bonus:
+    - {fileID: 1990264599564926494, guid: 7b14940c19a519941824b40b8eb141b1, type: 3}
