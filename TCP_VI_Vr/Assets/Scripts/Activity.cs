@@ -36,30 +36,41 @@ namespace ActivitSystem
         }
         private void OnTriggerEnter(Collider other)
         {
-            if (other.gameObject.layer == LayerMask.NameToLayer("Activity"))
+            if (other.gameObject.layer == LayerMask.NameToLayer("Grab"))
             {
-                if (other.CompareTag("reposition"))
-                {
+             
+
+            
                     targets[other.name] = other;
-                }
-            }
+            
+           }
         }
         public void Check()
         {
+
+           
+
             foreach (Steps s in steps)
             {
                 foreach (Instruction i in s.instructions)
                 {
                     int verified = 0;
+                  
                     foreach (Mandatory mandatory in i.destiction.mandatory)
                     {
+                       
+                            Debug.Log(mandatory.element.name);
+
                         if (targets.ContainsKey(mandatory.element.name))
                         {
                             verified++;
+                            
                             if (verified == i.destiction.mandatory.Count)
                             {
+                               
                                 s.Check = true;
                                 MakeThis(i.destiction);
+                                
                             }
                         }
                         else
