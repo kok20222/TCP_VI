@@ -27,10 +27,7 @@ namespace ActivitSystem
     public class Activity : Duraction
     {
         public List<Steps> steps;
-        private ActivityState state;
-        private float timeAmount;
         private Dictionary<string, Collider> targets;
-        private int amount = 0;
 
         private void Awake()
         {
@@ -87,35 +84,13 @@ namespace ActivitSystem
                     {
                         targets[mandatory.element.name].GetComponent<Item>().Consume(destiction.nextState);
                     }
-                    if (mandatory.element.GetComponent<Tool>() != null)
-                    {
-                        targets[mandatory.element.name].GetComponent<Tool>().Use();
-                        targets[mandatory.element.name].GetComponent<Tool>().ChangeStatus();
-                    }
-                    if (mandatory.element.GetComponent<Equipment>() != null)
-                    {
-                        targets[mandatory.element.name].GetComponent<Equipment>().SwitchOn();
-                        targets[mandatory.element.name].GetComponent<Equipment>().ChangeStatus();
-                    }
                 }
+
             }
-            //foreach (GameObject go in destiction.bonus)
-            //{
-            //    if (go.GetComponent<Item>() != null)
-            //    {
-            //        go.GetComponent<Item>().Consume(destiction.nextState);
-            //    }
-            //    if (go.GetComponent<Tool>() != null)
-            //    {
-            //        go.GetComponent<Tool>().Use();
-            //        go.GetComponent<Tool>().ChangeStatus();
-            //    }
-            //    if (go.GetComponent<Equipment>() != null)
-            //    {
-            //        go.GetComponent<Equipment>().SwitchOn();
-            //        go.GetComponent<Equipment>().ChangeStatus();
-            //    }
-            //}
+            foreach (GameObject go in destiction.bonus)
+            {
+                // coleta os bonos e aplica seus valores a atividade
+            }
         }
         private void Interrupt()
         {
@@ -129,12 +104,6 @@ namespace ActivitSystem
         {
             throw new System.NotImplementedException();
         }
-    }
-
-    public interface Tecnology
-    {
-        public void Combine(GameObject target);
-        public void ChangeStatus();
     }
 
     public enum ActivityState

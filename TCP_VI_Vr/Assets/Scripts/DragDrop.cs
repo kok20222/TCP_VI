@@ -15,7 +15,7 @@ public class DragDrop : MonoBehaviour
                 target = other.gameObject;
                 if (Input.GetMouseButton(0) && Input.mousePresent)
                 {
-                    other.GetComponent<Merge>().occupied = true;
+                    other.GetComponent<Tecnology>().occupied = true;
                 }
             }
         }
@@ -24,11 +24,11 @@ public class DragDrop : MonoBehaviour
     private void Update()
     {
         if(target != null)
-        if (target.GetComponent<Merge>().occupied)
+        if (target.GetComponent<Tecnology>().occupied)
         {
             if (Input.GetMouseButtonUp(0))
             {
-                target.GetComponent<Merge>().occupied = false;
+                target.GetComponent<Tecnology>().occupied = false;
             }
             Vector3 pos = target.transform.position;
             pos = Camera.main.ScreenPointToRay(Input.mousePosition).GetPoint(5);

@@ -8,24 +8,17 @@ namespace TargetSystem
 {
     [System.Serializable]
     [RequireComponent(typeof(BoxCollider))]
-    public class  Item: Merge
+    public class  Item: Tecnology
     {
         public string description;
         public List<State> state;
         public string classification;
         public float amount;
 
-        public override void Combine(GameObject target)
-        {
-            //Debug.Log("o item " + gameObject.name + "foi combinado ao item " + target.name);
-        }
-
         public void Consume(List<State> state)
         {
             this.state = state;
         }
-
-
 
         public void Use()
         {

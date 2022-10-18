@@ -5,21 +5,16 @@ using System.Collections.Generic;
 using TargetSystem;
 using UnityEngine;
 
-public class Tool : Merge, Tecnology
+public class Tool : Tecnology
 {
-    public bool mainMotivation;
-    public void ChangeStatus()
+    public override void ChangeStatus()
     {
         throw new System.NotImplementedException();
     }
 
     public override void Combine(GameObject target)
     {
-        throw new System.NotImplementedException();
+        LeanTween.move(target, base.target.position, .4f);
     }
 
-    public void Use()
-    {
-        throw new System.NotImplementedException();
-    }
 }
