@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8040225743946242261}
   - component: {fileID: 8040225743946242256}
   - component: {fileID: 8040225743946242263}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 8040225744828487780}
   - component: {fileID: 8040225744828487782}
   - component: {fileID: 8040225744828487783}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: Shirts
   m_TagString: reposition
   m_Icon: {fileID: 0}

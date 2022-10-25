@@ -267,6 +267,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   start: 0
   end: 0
+  level: 0
   steps:
   - name: Dry
     instructions:
@@ -832,6 +833,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   start: 0
   end: 0
+  level: 2
   steps:
   - name: Wash
     instructions:
@@ -1724,6 +1726,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   start: 0
   end: 0
+  level: 0
   steps:
   - name: 
     instructions:

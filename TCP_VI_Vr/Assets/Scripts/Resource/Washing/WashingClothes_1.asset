@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: WashingClothes_1
   m_EditorClassIdentifier: 
   life: 8
+  level: 2
   destiction:
     nextState: 010000000900000002000000
     mandatory:
