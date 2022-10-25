@@ -78,8 +78,7 @@ namespace ActivitSystem
 
            
 
-            foreach (Steps s in steps)
-            {
+        
                 foreach (Steps s in steps)
                 {
                     foreach (Instruction i in s.instructions)
@@ -109,7 +108,7 @@ namespace ActivitSystem
                         Punshiument();
                     }
                 }
-            }
+            
         }
         private void MakeThis()
         {

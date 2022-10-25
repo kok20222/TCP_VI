@@ -6685,7 +6685,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &596455580
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6704,7 +6704,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0.000030517578, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 193.04, y: 50.593002}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &596455581
@@ -7001,7 +7001,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &660797299
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9810,9 +9810,9 @@ Canvas:
   m_GameObject: {fileID: 1146887536}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_RenderMode: 1
+  m_Camera: {fileID: 963194227}
+  m_PlaneDistance: 1
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -10870,6 +10870,12 @@ MonoBehaviour:
   - name: Guardar_Bola
     instructions:
     - {fileID: 11400000, guid: 6914d19f878443c4799722d1a2ca30f3, type: 2}
+  eventFeedback:
+    m_PersistentCalls:
+      m_Calls: []
+  eventInterrupt:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!65 &1362012942
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14321,7 +14327,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 97a29dae0188baa4aa21debb85b4b86f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 2}
@@ -14337,14 +14343,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1938539732}
-  m_LocalRotation: {x: 0.0049364693, y: 0.7070896, z: -0.0049364693, w: 0.7070896}
+  m_LocalRotation: {x: 0.45828995, y: 0.5384889, z: 0.45072684, w: 0.54483515}
   m_LocalPosition: {x: 0.05, y: -0.03, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.21, z: 0.25}
+  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 485744911}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0.8, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0.8, y: 90, z: 80}
 --- !u!114 &1938539735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15198,7 +15204,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2133140067}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.61, y: 0, z: -0.622}
+  m_LocalPosition: {x: 0.61, y: 0, z: -1.393}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
