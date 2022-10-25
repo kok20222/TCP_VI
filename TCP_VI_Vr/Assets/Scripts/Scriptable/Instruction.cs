@@ -11,6 +11,7 @@ namespace InstructionSystem
     [CreateAssetMenu(fileName = "InstructionSystem", menuName = "Activity/Instruction", order = 1)]
     public class Instruction : ScriptableObject
     {
+        public int level;
         public bool punishment;
         public int point;
         [SerializeField] public Destiction destiction;
