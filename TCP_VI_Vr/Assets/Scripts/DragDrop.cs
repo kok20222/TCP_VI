@@ -8,15 +8,12 @@ public class DragDrop : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.layer == LayerMask.NameToLayer("Activity"))
+        if (other.gameObject.layer == LayerMask.NameToLayer("Grab"))
         {
-            if (other.CompareTag("reposition"))
+            target = other.gameObject;
+            if (Input.GetMouseButton(0) && Input.mousePresent)
             {
-                target = other.gameObject;
-                if (Input.GetMouseButton(0) && Input.mousePresent)
-                {
-                    other.GetComponent<Tecnology>().occupied = true;
-                }
+                other.GetComponent<Tecnology>().occupied = true;
             }
         }
     }

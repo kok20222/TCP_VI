@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8343072366967079586}
   - component: {fileID: 8343072366967079580}
   - component: {fileID: 8343072366967079581}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: WashingPowder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 8343072367829190145}
   - component: {fileID: 8343072367829190148}
   - component: {fileID: 8343072367829190151}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
