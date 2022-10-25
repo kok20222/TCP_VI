@@ -2,6 +2,7 @@ using InstructionSystem;
 using System.Collections.Generic;
 using TargetSystem;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace ActivitSystem
 {
@@ -27,12 +28,39 @@ namespace ActivitSystem
     public class Activity : Duraction
     {
         public List<Steps> steps;
+        public UnityEvent eventFeedback;
+        public UnityEvent eventInterrupt;
         private Dictionary<string, Collider> targets;
+        private float countTime = -1;
+        private ActivityState currente = ActivityState.to_do;
+        private Destiction destiction;
 
         private void Awake()
         {
             GetComponent<BoxCollider>().isTrigger = true;
             targets = new Dictionary<string, Collider>();
+        }
+        private void Update()
+        {
+            switch (currente)
+            {
+                case ActivityState.to_do:
+                    break;
+                case ActivityState.does:
+                    {
+                        countTime -= Time.deltaTime;
+                        if (countTime < 0)
+                        {
+                            currente = ActivityState.done;
+                            MakeThis();
+                        }
+                        break;
+                    }
+                case ActivityState.done:
+                    currente = ActivityState.to_do;
+                    Feedback();
+                    break;
+            }
         }
         private void OnTriggerEnter(Collider other)
         {
@@ -46,35 +74,40 @@ namespace ActivitSystem
         }
         public void Check()
         {
-            foreach (Steps s in steps)
+            if (countTime < 0)
             {
-                foreach (Instruction i in s.instructions)
+                foreach (Steps s in steps)
                 {
-                    int verified = 0;
-                    foreach (Mandatory mandatory in i.destiction.mandatory)
+                    foreach (Instruction i in s.instructions)
                     {
-                        if (targets.ContainsKey(mandatory.element.name))
+                        int verified = 0;
+                        foreach (Mandatory mandatory in i.destiction.mandatory)
                         {
-                            verified++;
-                            if (verified == i.destiction.mandatory.Count)
+                            if (targets.ContainsKey(mandatory.element.name))
                             {
-                                s.Check = true;
-                                MakeThis(i.destiction);
+                                verified++;
+                                if (verified == i.destiction.mandatory.Count)
+                                {
+                                    s.Check = true;
+                                    countTime = i.life;
+                                    destiction = i.destiction;
+                                    currente = ActivityState.does;
+                                }
+                            }
+                            else
+                            {
+                                verified--;
                             }
                         }
-                        else
-                        {
-                            verified--;
-                        }
                     }
-                }
-                if (!s.Check)
-                {
-                    Punshiument();
+                    if (!s.Check)
+                    {
+                        Punshiument();
+                    }
                 }
             }
         }
-        private void MakeThis(Destiction destiction)
+        private void MakeThis()
         {
             foreach (Mandatory mandatory in destiction.mandatory)
             {
@@ -94,7 +127,8 @@ namespace ActivitSystem
         }
         private void Interrupt()
         {
-            throw new System.NotImplementedException();
+            eventInterrupt.Invoke();
+            Punshiument();
         }
         private void Punshiument()
         {
@@ -102,7 +136,7 @@ namespace ActivitSystem
         }
         private void Feedback()
         {
-            throw new System.NotImplementedException();
+            eventFeedback.Invoke();
         }
     }
 
