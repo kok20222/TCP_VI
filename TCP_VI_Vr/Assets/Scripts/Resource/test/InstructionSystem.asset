@@ -10,17 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 483f33546b29cff46b0212750af78b73, type: 3}
-  m_Name: WashingClothes_0
+  m_Name: InstructionSystem
   m_EditorClassIdentifier: 
-  life: 16
+  life: 5
   destiction:
-    nextState: 010000000900000002000000
+    nextState: 000000000900000003000000
     mandatory:
     - target: 1
       element: {fileID: 8040225744828487803, guid: d9592745bad28c449b32020a52e8899f,
         type: 3}
-    - target: 0
-      element: {fileID: 8343072366967079577, guid: 037449f1f063aa04daf78ea32611dd2e,
+    - target: 1
+      element: {fileID: 4787526940229767666, guid: 39d36366580b59140b2884bc95ce944c,
         type: 3}
-    bonus:
-    - {fileID: 1990264599564926494, guid: 7b14940c19a519941824b40b8eb141b1, type: 3}
+    bonus: []
