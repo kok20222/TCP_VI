@@ -12,6 +12,7 @@ namespace InstructionSystem
     public class Instruction : ScriptableObject
     {
         public int life;
+        public int level;
         [SerializeField] public Destiction destiction;
 
     }

@@ -64,17 +64,21 @@ namespace ActivitSystem
         }
         private void OnTriggerEnter(Collider other)
         {
-            if (other.gameObject.layer == LayerMask.NameToLayer("Activity"))
+            if (other.gameObject.layer == LayerMask.NameToLayer("Grab"))
             {
-                if (other.CompareTag("reposition"))
-                {
+             
+
+            
                     targets[other.name] = other;
-                }
-            }
+            
+           }
         }
         public void Check()
         {
-            if (countTime < 0)
+
+           
+
+            foreach (Steps s in steps)
             {
                 foreach (Steps s in steps)
                 {
