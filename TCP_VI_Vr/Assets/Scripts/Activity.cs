@@ -75,10 +75,6 @@ namespace ActivitSystem
         }
         public void Check()
         {
-
-           
-
-        
                 foreach (Steps s in steps)
                 {
                     foreach (Instruction i in s.instructions)
