@@ -3,15 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class UIController : MonoBehaviour
 {
+    public static UIController instance;
     public GameObject pauseUi;
+
     // Start is called before the first frame update
     void Start()
     {
+        instance = this;
         ResumeGame();
     }
+    
     public void panelTrue(GameObject go)
     {
         go.SetActive(true);
@@ -33,4 +38,5 @@ public class UIController : MonoBehaviour
     {
         Time.timeScale = 1;
     }
+   
 }
