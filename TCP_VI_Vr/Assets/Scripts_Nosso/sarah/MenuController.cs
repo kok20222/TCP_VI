@@ -9,6 +9,7 @@ public class MenuController : MonoBehaviour
 {
     public TMP_InputField tempoInput;
     public GameObject tempoInputUi;
+    public GameObject macaneta;
     public GameObject TextTime1Ui;
     public static MenuController instance;
     contagemRegressiva Contador1 = new contagemRegressiva();
@@ -45,6 +46,7 @@ public class MenuController : MonoBehaviour
     }
     public void contagemRegressiva(GameObject iniciarBtn)
     {
+        macaneta.SetActive(true);
         tempoInputUi.SetActive(false);
         TextTime1Ui.SetActive(true);
         Destroy(iniciarBtn);
@@ -57,7 +59,7 @@ public class MenuController : MonoBehaviour
         {
             Debug.Log("Not a valid int");
         }
-        //chamar funcao para abrir porta e começar o jogo
+        //chamar funcao para abrir porta e comeï¿½ar o jogo
     }
     private void FixedUpdate()
     {
