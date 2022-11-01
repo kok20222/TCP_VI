@@ -7,7 +7,7 @@ public class HandPresence : MonoBehaviour
 {   
     int framesToSkip;
 
-
+    public static HandPresence instance;
     public InputDeviceCharacteristics ControllerCharacteristics;
 
     private InputDevice targetDevice;
@@ -18,10 +18,12 @@ public class HandPresence : MonoBehaviour
     private GameObject spawnedHandModel;
 
     private Animator handAnimator;
+    public int  id;
+    public bool aberto = false;
      //Start is called before the first frame update
     void Start()
     {
-        
+        instance=this;
         framesToSkip = 10;
 
         
@@ -78,11 +80,19 @@ public class HandPresence : MonoBehaviour
 
 
 
-       // targetDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool primaryButtonValue);
-       // if(primaryButtonValue){
+        targetDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool primaryButtonValue);
+        if(primaryButtonValue && id==1 && aberto == false){
 
-         //        Debug.Log("pressing Primary Button");
-       // }
+                UIController.instance.PauseGame();
+                 
+        }
+        /*else if(primaryButtonValue && id==1 && aberto == true){
+
+             UIController.instance.ResumeGame();
+
+        }
+
+*/
            
 
        // targetDevice.TryGetFeatureValue(CommonUsages.trigger, out float triggerValue);
