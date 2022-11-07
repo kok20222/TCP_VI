@@ -10,6 +10,7 @@ public class Lixo : MonoBehaviour
 
     public TMP_Text lixotexto1;
     public int lixos = 0;
+    bool aux=false;
     
     // Start is called before the first frame update
     void Start()
@@ -22,7 +23,13 @@ public class Lixo : MonoBehaviour
     {
 
         lixotexto1.text =  lixos + "/5";
-
+    if(lixos==5){
+        MenuController.instance.panelTrue(MenuController.instance.checks[0]);
+        if(aux==false){
+                MenuController.instance.vitoryCond++;
+                aux=true;
+            }
+    }
 
         
         

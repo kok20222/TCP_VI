@@ -5,10 +5,12 @@ using UnityEngine;
 public class contagemRegressiva : MonoBehaviour
 {
     public float tempoTotal;
+    public float tempoInicial;
     private bool isRunning, tempoZerado;
 
     public void IniciarContador(float time)
     {
+        tempoInicial = time;
         tempoTotal = time;
         IsRunning = true;
         TempoZerado = false;
@@ -43,7 +45,7 @@ public class contagemRegressiva : MonoBehaviour
     }
     private string strzero(int val)
     {
-        /* Complemento Da Função "FormatarTempo()".  
+        /* Complemento Da Funï¿½ï¿½o "FormatarTempo()".  
          * Adiciona um '0' Na Frente Da Hora, Minuto Ou Segundo, Caso For Menor Que '10'. */
         return (val < 10) ? "0" + val.ToString() : val.ToString(); ;
     }
