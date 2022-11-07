@@ -9046,12 +9046,6 @@ Transform:
   m_Father: {fileID: 1626659655}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!23 &859601740 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 6106718529241751517, guid: cc803c08d4dc2eb43acb8676e3fa25b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 6106718530034230417}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &878609332
 GameObject:
   m_ObjectHideFlags: 0
@@ -10507,12 +10501,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3585985183375381268}
   m_PrefabAsset: {fileID: 0}
---- !u!23 &988621488 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 3585985183260244388, guid: 42e37a9f73bae3b478b409d68e3da8f9,
-    type: 3}
-  m_PrefabInstance: {fileID: 3585985183375381268}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &989132476
 GameObject:
   m_ObjectHideFlags: 0
@@ -11747,7 +11735,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00015258789, y: 0}
+  m_AnchoredPosition: {x: -0.00012207031, y: 0}
   m_SizeDelta: {x: -600.33997, y: -203.52266}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1075183449
@@ -13819,12 +13807,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!23 &1315590560 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 3665352090881920828, guid: 77d1d3fea93ebb243aee30b1f541a028,
-    type: 3}
-  m_PrefabInstance: {fileID: 3665352091920686748}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1316962886
 GameObject:
   m_ObjectHideFlags: 0
@@ -20466,7 +20448,7 @@ MonoBehaviour:
   eventFeedback:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1315590560}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
         m_MethodName: set_material
         m_Mode: 2
@@ -20479,7 +20461,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 988621488}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
         m_MethodName: set_material
         m_Mode: 2
@@ -20492,7 +20474,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 859601740}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
         m_MethodName: set_material
         m_Mode: 2
@@ -21772,7 +21754,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2106736442}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.429, y: 0, z: 7.044}
+  m_LocalPosition: {x: -0.429, y: 0, z: 0.064}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -22559,6 +22541,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3965497692756325274, guid: 42e37a9f73bae3b478b409d68e3da8f9,
         type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3965497692756325274, guid: 42e37a9f73bae3b478b409d68e3da8f9,
+        type: 3}
       propertyPath: m_Center.z
       value: 0.00020397901
       objectReference: {fileID: 0}
@@ -22582,7 +22569,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 778689056}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.02837205, y: 0.014318615, z: 0.02793262}
@@ -22628,6 +22615,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.z
       value: 0.05820476
+      objectReference: {fileID: 0}
+    - target: {fileID: 3665352090881920831, guid: 77d1d3fea93ebb243aee30b1f541a028,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3665352090881920831, guid: 77d1d3fea93ebb243aee30b1f541a028,
         type: 3}
@@ -22951,6 +22943,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.z
       value: 0.059385493
+      objectReference: {fileID: 0}
+    - target: {fileID: 4591303596517730410, guid: cc803c08d4dc2eb43acb8676e3fa25b5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4591303596517730410, guid: cc803c08d4dc2eb43acb8676e3fa25b5,
         type: 3}
