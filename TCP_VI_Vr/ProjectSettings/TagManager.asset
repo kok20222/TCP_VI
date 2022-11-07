@@ -6,6 +6,7 @@ TagManager:
   tags:
   - leftHand
   - reposition
+  - lixo
   layers:
   - Default
   - TransparentFX
