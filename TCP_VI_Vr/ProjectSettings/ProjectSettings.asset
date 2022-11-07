@@ -690,6 +690,7 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
+    Android: STARTER_ASSETS_PACKAGES_CHECKED
     Standalone: STARTER_ASSETS_PACKAGES_CHECKED
   additionalCompilerArguments: {}
   platformArchitecture: {}
@@ -788,11 +789,11 @@ PlayerSettings:
     m_VersionName: 
   apiCompatibilityLevel: 6
   activeInputHandler: 2
-  cloudProjectId: 0b529a33-f5ee-4c92-ac9d-aaea2b046437
+  cloudProjectId: 131b8bc1-7333-414e-960c-4499b1f5c4f9
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: TCP_VI_Vr
-  organizationId: correian
+  projectName: TCP_VI_Vr (1)
+  organizationId: danielhenriqueoliver
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 
