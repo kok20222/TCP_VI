@@ -17,6 +17,7 @@ public class UIController : MonoBehaviour
     private bool pausado = false;
     private Vector3 rotateValue;
     private Vector3 positionValue;
+    public GameObject canvasHand;
 
     // Start is called before the first frame update
     void Start()

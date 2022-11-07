@@ -5,24 +5,26 @@ using UnityEngine;
 public class SpriteHand : MonoBehaviour
 {
     // Start is called before the first frame update
-    SpriteRenderer m_SpriteRenderer;
-    GameObject leftHand;
+    //SpriteRenderer m_SpriteRenderer;
+    public GameObject canvasHand;
+    public GameObject leftHand;
     float rotationZ;
     void Start()
     {
-        m_SpriteRenderer = GetComponent<SpriteRenderer>();
+        //m_SpriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-         leftHand = GameObject.FindWithTag("leftHand");
+         //leftHand = GameObject.FindWithTag("leftHand");
          rotationZ= leftHand.transform.rotation.z;
+         Debug.Log(rotationZ);
          if (rotationZ > 0.1f && rotationZ<0.9f)
         {
-            m_SpriteRenderer.enabled = true;
+           canvasHand.SetActive(true);
         }else{
-            m_SpriteRenderer.enabled = false;
+           canvasHand.SetActive(false);
         }
     }
 }
