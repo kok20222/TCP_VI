@@ -48,6 +48,7 @@ public class Maquina : MonoBehaviour
          if(roupas ==4){
             lavarroupa1.text =   "Lavagem finalizada!";
             MenuController.instance.panelTrue(MenuController.instance.checks[1]);
+            MenuController.instance.panelTrue(MenuController.instance.checks[3]);
             if(aux==false){
                 MenuController.instance.vitoryCond++;
                 aux=true;
