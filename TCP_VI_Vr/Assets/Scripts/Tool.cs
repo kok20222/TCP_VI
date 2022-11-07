@@ -5,16 +5,9 @@ using System.Collections.Generic;
 using TargetSystem;
 using UnityEngine;
 
-public class Tool : Tecnology
+public class Tool : Item
 {
-    public override void ChangeStatus()
+    public void Use()
     {
-        throw new System.NotImplementedException();
     }
-
-    public override void Combine(GameObject target)
-    {
-        LeanTween.move(target, base.target.position, .4f);
-    }
-
 }
