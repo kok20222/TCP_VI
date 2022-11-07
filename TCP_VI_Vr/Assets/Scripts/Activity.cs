@@ -15,6 +15,7 @@ namespace ActivitSystem
     public class Steps
     {
         public string name;
+        public int level;
         private bool check = false;
         [SerializeField] public List<Instruction> instructions;
 
@@ -32,6 +33,7 @@ namespace ActivitSystem
         public UnityEvent eventInterrupt;
         private Dictionary<string, Collider> targets;
         private float countTime = -1;
+        private float currentLife;
         private ActivityState currente = ActivityState.to_do;
         private Destiction destiction;
 
@@ -66,45 +68,41 @@ namespace ActivitSystem
         {
             if (other.gameObject.layer == LayerMask.NameToLayer("Grab"))
             {
-             
-
-            
-                    targets[other.name] = other;
-            
-           }
+                targets[other.name] = other;
+            }
         }
         public void Check()
         {
-                foreach (Steps s in steps)
+            foreach (Steps s in steps)
+            {
+                foreach (Instruction i in s.instructions)
                 {
-                    foreach (Instruction i in s.instructions)
+                    int verified = 0;
+                    foreach (Mandatory mandatory in i.destiction.mandatory)
                     {
-                        int verified = 0;
-                        foreach (Mandatory mandatory in i.destiction.mandatory)
+                        if (targets.ContainsKey(mandatory.element.name) && i.level <= s.level)
                         {
-                            if (targets.ContainsKey(mandatory.element.name))
+                            verified++;
+                            if (verified == i.destiction.mandatory.Count)
                             {
-                                verified++;
-                                if (verified == i.destiction.mandatory.Count)
-                                {
-                                    s.Check = true;
-                                    countTime = i.life;
-                                    destiction = i.destiction;
-                                    currente = ActivityState.does;
-                                }
-                            }
-                            else
-                            {
-                                verified--;
+                                s.Check = true;
+                                countTime =  i.life;
+                                currentLife = i.life;
+                                destiction = i.destiction;
+                                currente = ActivityState.does;
                             }
                         }
-                    }
-                    if (!s.Check)
-                    {
-                        Punshiument();
+                        else
+                        {
+                            verified--;
+                        }
                     }
                 }
-            
+                if (!s.Check)
+                {
+                    Punshiument();
+                }
+            }
         }
         private void MakeThis()
         {
@@ -136,6 +134,11 @@ namespace ActivitSystem
         private void Feedback()
         {
             eventFeedback.Invoke();
+        }
+        public float GetCurrentTimeActivity() {
+            if (currentLife - countTime > currentLife)
+                return currentLife;
+            return currentLife - countTime;
         }
     }
 
