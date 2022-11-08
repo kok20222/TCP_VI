@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -11440,10 +11440,12 @@ MonoBehaviour:
   setaUI: {fileID: 1840769398}
   fecharUi: {fileID: 981019108}
   dialogoText:
-  - Voce e um estudante e precisa arrumar sua casa!
-  - dialogo dialogo dialogo
-  - bla bla bla
-  - mensagem mensagem mensagem
+  - Boa tarde, calouro!
+  - "Na volta da faculdade voc\xEA encontrou uma grande chuva e lama\xE7al"
+  - "Agora voc\xEA precisa lavar sua roupa suja do tor\xF3 antes que ela manche!"
+  - "Voc\xEA tamb\xE9m possui tarefas da faculdade para fazer"
+  - "Mas pelo menos n\xE3o precisar\xE1 cozinhar pois ainda resta comida de casa
+    o suficiente para hoje"
   idText: 0
 --- !u!114 &948869535
 MonoBehaviour:
@@ -21788,7 +21790,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Voce e um estudante e precisa arrumar sua casa!
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 643a563aaefe53a48a6f17efd8652663, type: 2}
   m_sharedMaterial: {fileID: 7028981202292096505, guid: 643a563aaefe53a48a6f17efd8652663,
@@ -21852,7 +21854,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -76.21914, y: 0, z: -85.78163, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

@@ -37,6 +37,7 @@ public class Lixo : MonoBehaviour
         if(aux2==false && aux==true){
                 MenuController.instance.vitoryCond--;
                 aux2=true;
+                aux = false;
             }
     }
 
