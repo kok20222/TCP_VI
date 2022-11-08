@@ -9,13 +9,13 @@ public class MenuController : MonoBehaviour
 {
     public TMP_InputField tempoInput;
     public TMP_Text SOBRA;
-    public GameObject tempoInputUi;
     public GameObject[] checks;
     public GameObject macaneta;
     public GameObject TextTime1Ui;
     public GameObject vitoriaUI;
     public GameObject derrotaUI;
     public TMP_Text TextTimeHand;
+    public GameObject iniciarBtn;
     public float valor;
     
     public static MenuController instance;
@@ -52,20 +52,13 @@ public class MenuController : MonoBehaviour
     {
         Application.Quit();
     }
-    public void contagemRegressiva(GameObject iniciarBtn)
+    public void contagemRegressiva(float v)
     {
         macaneta.SetActive(true);
-        tempoInputUi.SetActive(false);
         TextTime1Ui.SetActive(true);
-        Destroy(iniciarBtn);
-        
-        
-            Contador1.IniciarContador((int)valor);
-        
-       
-            Debug.Log("Not a valid int");
-        
-        //chamar funcao para abrir porta e come�ar o jogo
+        iniciarBtn.SetActive(false);
+        valor = v;
+        Contador1.IniciarContador((int)valor);
     }
 
 
@@ -92,13 +85,6 @@ public class MenuController : MonoBehaviour
             Time.timeScale = 0;
         }
         
-    }
-
-
-    public void valorset(float v){
-
-        valor = v;
-
     }
 
 }
