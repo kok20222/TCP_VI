@@ -4212,25 +4212,13 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 948869536}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
-        m_MethodName: panelTrue
-        m_Mode: 2
+        m_MethodName: valorset
+        m_Mode: 4
         m_Arguments:
-          m_ObjectArgument: {fileID: 1967969031}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 948869536}
-        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
-        m_MethodName: panelFalse
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 815796381}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
+          m_FloatArgument: 120
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -11630,9 +11618,7 @@ MonoBehaviour:
   vitoriaUI: {fileID: 716973224}
   derrotaUI: {fileID: 1138168751}
   TextTimeHand: {fileID: 1755482284}
-  tempo1: {fileID: 0}
-  tempo2: {fileID: 0}
-  tempo3: {fileID: 0}
+  valor: 0
   TextTime1: {fileID: 1616500457}
   vitoryCond: 0
 --- !u!1 &968122189
@@ -17224,25 +17210,13 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 948869536}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
-        m_MethodName: panelTrue
-        m_Mode: 2
+        m_MethodName: valorset
+        m_Mode: 4
         m_Arguments:
-          m_ObjectArgument: {fileID: 1967969031}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 948869536}
-        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
-        m_MethodName: panelFalse
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 815796381}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
+          m_FloatArgument: 180
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -20534,25 +20508,13 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 948869536}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
-        m_MethodName: panelTrue
-        m_Mode: 2
+        m_MethodName: valorset
+        m_Mode: 4
         m_Arguments:
-          m_ObjectArgument: {fileID: 1967969031}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 948869536}
-        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
-        m_MethodName: panelFalse
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 815796381}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
+          m_FloatArgument: 300
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
