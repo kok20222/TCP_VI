@@ -16,6 +16,7 @@ public class MenuController : MonoBehaviour
     public GameObject vitoriaUI;
     public GameObject derrotaUI;
     public TMP_Text TextTimeHand;
+    public float valor;
     
     public static MenuController instance;
     contagemRegressiva Contador1 = new contagemRegressiva();
@@ -57,17 +58,18 @@ public class MenuController : MonoBehaviour
         tempoInputUi.SetActive(false);
         TextTime1Ui.SetActive(true);
         Destroy(iniciarBtn);
-        int timeChose;
-        if (int.TryParse(tempoInput.text, out timeChose))
-        {
-            Contador1.IniciarContador(timeChose);
-        }
-        else
-        {
+        
+        
+            Contador1.IniciarContador((int)valor);
+        
+       
             Debug.Log("Not a valid int");
-        }
+        
         //chamar funcao para abrir porta e come�ar o jogo
     }
+
+
+    
     private void FixedUpdate()
     {
         // Contador 1
@@ -90,6 +92,13 @@ public class MenuController : MonoBehaviour
             Time.timeScale = 0;
         }
         
+    }
+
+
+    public void valorset(float v){
+
+        valor = v;
+
     }
 
 }
