@@ -6,33 +6,40 @@ using UnityEngine.Events;
 
 public class DragDrop : MonoBehaviour
 {
+    private bool check = false;
     private GameObject target;
+    private Vector3 distance;
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.layer == LayerMask.NameToLayer("Grab"))
+        if (other.gameObject.layer == LayerMask.NameToLayer("Grab") && Input.GetMouseButtonDown(0))
         {
-            if (Input.GetMouseButtonDown(0) && Input.mousePresent)
-            {
-                target = other.gameObject;
-                other.GetComponent<Tecnology>().occupied = true;
-            }
+            distance = other.transform.position-transform.position;
+            target = other.gameObject;
+            drag();
         }
+    }
+
+    public void drop()
+    {
+        check = false;
+        target.GetComponent<Tecnology>().Combine();
+    }
+    public void drag()
+    {
+        check = true;
     }
 
     private void Update()
     {
-        if (target != null)
-            if (target.GetComponent<Tecnology>().occupied)
+        if (check)
+        {
+            if (Input.GetMouseButtonUp(0))
             {
-                Vector3 pos = target.transform.position;
-                pos = Camera.main.ScreenPointToRay(Input.mousePosition).GetPoint(5);
-                target.transform.position = pos;
-                if (Input.GetMouseButtonUp(0))
-                {
-                    target.GetComponent<Tecnology>().occupied = false;
-                    target = null;
-                }
+                drop();
             }
+            Transform t = target.GetComponent<Transform>().transform;
+            t.position = transform.position + distance;
+        }
     }
 }

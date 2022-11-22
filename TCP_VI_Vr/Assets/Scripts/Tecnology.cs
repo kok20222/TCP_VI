@@ -12,7 +12,6 @@ public class Tecnology : MonoBehaviour
     public List<Transform> targets;
     private int targetIndex = 0;
     private GameObject target;
-    public bool occupied = false;
     public TEC_STATE occupation = TEC_STATE.item;
     public enum TEC_STATE { item, tool, equipment }
 
@@ -22,21 +21,20 @@ public class Tecnology : MonoBehaviour
     }
     private void OnTriggerStay(Collider other)
     {
-        if (!occupied && other.GetComponent<Tecnology>() != null)
+        if (other.GetComponent<Tecnology>() != null)
         {
             target = other.gameObject;
-            Combine(target);
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!occupied && other.GetComponent<Tecnology>() != null)
+        if ( other.GetComponent<Tecnology>() != null)
         {
             targetIndex = (targetIndex + 1) % target.GetComponent<Tecnology>().targets.Count;
         }
     }
-    public void Combine(GameObject target)
+    public void Combine()
     {
         if (target.GetComponent<Tecnology>().targets.Count > 0)
         {
