@@ -13,11 +13,15 @@ MonoBehaviour:
   m_Name: dry_0
   m_EditorClassIdentifier: 
   life: 10
+  level: 1
   destiction:
     nextState: 000000000900000002000000
     mandatory:
     - target: 1
       element: {fileID: 8040225744828487803, guid: d9592745bad28c449b32020a52e8899f,
+        type: 3}
+    - target: 1
+      element: {fileID: 8164727130821703260, guid: 26910f56c1d79ad4f938b10ecd2831c5,
         type: 3}
     bonus:
     - {fileID: 6087962425808845591, guid: 8e2b9667c68ee3d46a5edf9becbdcbdd, type: 3}

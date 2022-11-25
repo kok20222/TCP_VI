@@ -10,15 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 483f33546b29cff46b0212750af78b73, type: 3}
-  m_Name: dry_1
+  m_Name: guardarRoupa_basico
   m_EditorClassIdentifier: 
-  life: 20
-  level: 1
+  life: 5
+  level: 3
   destiction:
-    nextState: 000000000900000002000000
+    nextState: 0000000009000000020000000e000000
     mandatory:
     - target: 1
-      element: {fileID: 3815022803249457889, guid: c657c70968f29114fb1f82eaf1263845,
+      element: {fileID: 6106718529241751514, guid: cc803c08d4dc2eb43acb8676e3fa25b5,
         type: 3}
-    bonus:
-    - {fileID: 6087962425808845591, guid: 8e2b9667c68ee3d46a5edf9becbdcbdd, type: 3}
+    - target: 1
+      element: {fileID: 3665352090881920771, guid: 77d1d3fea93ebb243aee30b1f541a028,
+        type: 3}
+    - target: 1
+      element: {fileID: 3585985183067572532, guid: 42e37a9f73bae3b478b409d68e3da8f9,
+        type: 3}
+    bonus: []

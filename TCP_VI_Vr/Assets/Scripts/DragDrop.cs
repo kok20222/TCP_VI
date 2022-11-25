@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TargetSystem;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
@@ -23,7 +24,7 @@ public class DragDrop : MonoBehaviour
     public void drop()
     {
         check = false;
-        target.GetComponent<Tecnology>().Combine();
+        target.GetComponent<ITecnology>().Combine();
     }
     public void drag()
     {

@@ -12,12 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 483f33546b29cff46b0212750af78b73, type: 3}
   m_Name: CollectClothes
   m_EditorClassIdentifier: 
-  punishment: 0
-  point: 0
+  life: 2
+  level: 0
   destiction:
     nextState: 
     mandatory:
     - target: 1
       element: {fileID: 8040225744828487803, guid: d9592745bad28c449b32020a52e8899f,
+        type: 3}
+    - target: 1
+      element: {fileID: 8164727130821703260, guid: 26910f56c1d79ad4f938b10ecd2831c5,
         type: 3}
     bonus: []

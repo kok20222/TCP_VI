@@ -10,14 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 483f33546b29cff46b0212750af78b73, type: 3}
-  m_Name: instrucao_01
+  m_Name: guardarRoupa
   m_EditorClassIdentifier: 
-  punishment: 0
-  point: 0
+  life: 0
+  level: 3
   destiction:
-    nextState: 0400000007000000
+    nextState: 0000000002000000090000000e000000
     mandatory:
     - target: 1
-      element: {fileID: 5792730498133786230, guid: 68b152719eac75e4b940927bef7c53c8,
+      element: {fileID: 6106718529241751514, guid: cc803c08d4dc2eb43acb8676e3fa25b5,
+        type: 3}
+    - target: 1
+      element: {fileID: 3665352090881920771, guid: 77d1d3fea93ebb243aee30b1f541a028,
+        type: 3}
+    - target: 1
+      element: {fileID: 3585985183067572532, guid: 42e37a9f73bae3b478b409d68e3da8f9,
         type: 3}
     bonus: []

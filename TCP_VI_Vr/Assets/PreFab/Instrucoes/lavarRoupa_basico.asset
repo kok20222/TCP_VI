@@ -10,22 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 483f33546b29cff46b0212750af78b73, type: 3}
-  m_Name: WashingClothes_1
+  m_Name: lavarRoupa_basico
   m_EditorClassIdentifier: 
-  life: 4
+  life: 10
   level: 0
   destiction:
     nextState: 010000000900000002000000
     mandatory:
     - target: 1
-      element: {fileID: 8164727130821703260, guid: 26910f56c1d79ad4f938b10ecd2831c5,
+      element: {fileID: 6106718529241751514, guid: cc803c08d4dc2eb43acb8676e3fa25b5,
         type: 3}
     - target: 1
-      element: {fileID: 8040225744828487803, guid: d9592745bad28c449b32020a52e8899f,
+      element: {fileID: 3585985183067572532, guid: 42e37a9f73bae3b478b409d68e3da8f9,
         type: 3}
-    - target: 0
-      element: {fileID: 8343072366967079577, guid: 037449f1f063aa04daf78ea32611dd2e,
+    - target: 1
+      element: {fileID: 3665352090881920771, guid: 77d1d3fea93ebb243aee30b1f541a028,
         type: 3}
-    bonus:
-    - {fileID: 1990264599564926494, guid: 7b14940c19a519941824b40b8eb141b1, type: 3}
-    - {fileID: 3815022803249457889, guid: c657c70968f29114fb1f82eaf1263845, type: 3}
+    - target: 1
+      element: {fileID: 4982030353111188499, guid: b4c07b3e548b09e43a2435536a410782,
+        type: 3}
+    bonus: []
