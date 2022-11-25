@@ -6,6 +6,8 @@ TagManager:
   tags:
   - leftHand
   - reposition
+  - lixo
+  - roupa
   layers:
   - Default
   - TransparentFX

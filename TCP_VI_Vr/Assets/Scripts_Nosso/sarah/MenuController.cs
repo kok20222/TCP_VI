@@ -8,12 +8,20 @@ using TMPro;
 public class MenuController : MonoBehaviour
 {
     public TMP_InputField tempoInput;
-    public GameObject tempoInputUi;
+    public TMP_Text SOBRA;
+    public GameObject[] checks;
     public GameObject macaneta;
     public GameObject TextTime1Ui;
+    public GameObject vitoriaUI;
+    public GameObject derrotaUI;
+    public TMP_Text TextTimeHand;
+    public GameObject iniciarBtn;
+    public float valor;
+    
     public static MenuController instance;
     contagemRegressiva Contador1 = new contagemRegressiva();
     public TMP_Text TextTime1;
+    public int vitoryCond=0;
 
     // Start is called before the first frame update
     void Start() {
@@ -44,23 +52,17 @@ public class MenuController : MonoBehaviour
     {
         Application.Quit();
     }
-    public void contagemRegressiva(GameObject iniciarBtn)
+    public void contagemRegressiva(float v)
     {
         macaneta.SetActive(true);
-        tempoInputUi.SetActive(false);
         TextTime1Ui.SetActive(true);
-        Destroy(iniciarBtn);
-        int timeChose;
-        if (int.TryParse(tempoInput.text, out timeChose))
-        {
-            Contador1.IniciarContador(timeChose);
-        }
-        else
-        {
-            Debug.Log("Not a valid int");
-        }
-        //chamar funcao para abrir porta e come�ar o jogo
+        iniciarBtn.SetActive(false);
+        valor = v;
+        Contador1.IniciarContador((int)valor);
     }
+
+
+    
     private void FixedUpdate()
     {
         // Contador 1
@@ -68,7 +70,21 @@ public class MenuController : MonoBehaviour
         {
             Contador1.Contagem(); // Contando...
             TextTime1.text = "Tempo:  " + Contador1.FormatarTempo((int)Contador1.tempoTotal);
+             TextTimeHand.text = "Tempo:  " + Contador1.FormatarTempo((int)Contador1.tempoTotal);
+
+             if(vitoryCond<2 && Contador1.tempoTotal<0){
+                panelTrue(derrotaUI);
+                 Time.timeScale = 0;
+             }
+            
         }
+        if(vitoryCond==2){
+            float tempoSobra = Contador1.tempoInicial - Contador1.tempoTotal;
+             SOBRA.text = Contador1.FormatarTempo((int)tempoSobra);
+            panelTrue(vitoriaUI);
+            Time.timeScale = 0;
+        }
+        
     }
 
 }

@@ -20,6 +20,7 @@ public class HandPresence : MonoBehaviour
     private Animator handAnimator;
     public int  id;
     public bool aberto = false;
+    public bool aberto2 = false;
      //Start is called before the first frame update
     void Start()
     {
@@ -86,6 +87,51 @@ public class HandPresence : MonoBehaviour
                 UIController.instance.PauseGame();
                  
         }
+
+if( id==0 &&aberto2==false){
+         targetDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool primaryButtonValue2);
+
+        
+            if(primaryButtonValue2 ){
+                
+                    UIController.instance.panelTrue(UIController.instance.canvasHand);
+                    aberto2=true;
+                
+                
+        }
+        }
+        if( id==0 &&aberto2==true){
+         targetDevice.TryGetFeatureValue(CommonUsages.secondaryButton, out bool primaryButtonValue3);
+
+        
+            if(primaryButtonValue3 ){
+                
+                    UIController.instance.panelFalse(UIController.instance.canvasHand);
+                    aberto2=false;
+                
+                
+        }
+        }
+        /*
+        targetDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool primaryButtonValue3);
+
+        if(primaryButtonValue3 && id==0 &&aberto2==true){
+
+                
+                    UIController.instance.panelFalse(UIController.instance.canvasHand);
+                    aberto2=false;
+                
+                
+                 
+        }
+        */
+           // if(primaryButtonValue2 && id==0 &&aberto2==true){
+        
+                  //  UIController.instance.panelFalse(UIController.instance.canvasHand);
+                   // aberto2=false;
+                
+           // }
+
         /*else if(primaryButtonValue && id==1 && aberto == true){
 
              UIController.instance.ResumeGame();
