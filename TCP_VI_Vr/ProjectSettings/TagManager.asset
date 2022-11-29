@@ -8,6 +8,8 @@ TagManager:
   - reposition
   - lixo
   - roupa
+  - CinemachineTarget
+  - Active
   layers:
   - Default
   - TransparentFX

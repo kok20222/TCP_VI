@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 483f33546b29cff46b0212750af78b73, type: 3}
+  m_Name: guardarRoupa_basico
+  m_EditorClassIdentifier: 
+  life: 5
+  level: 3
+  destiction:
+    nextState: 0000000009000000020000000e000000
+    mandatory:
+    - target: 1
+      element: {fileID: 6106718529241751514, guid: cc803c08d4dc2eb43acb8676e3fa25b5,
+        type: 3}
+    - target: 1
+      element: {fileID: 3665352090881920771, guid: 77d1d3fea93ebb243aee30b1f541a028,
+        type: 3}
+    - target: 1
+      element: {fileID: 3585985183067572532, guid: 42e37a9f73bae3b478b409d68e3da8f9,
+        type: 3}
+    bonus: []

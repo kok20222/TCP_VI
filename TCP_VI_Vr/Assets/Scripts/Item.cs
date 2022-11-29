@@ -70,7 +70,7 @@ namespace TargetSystem
         unwrinkled,
         burne,
         frozen,
-        crooked,
+        cooked,
         crude,
         dirty,
         clean,

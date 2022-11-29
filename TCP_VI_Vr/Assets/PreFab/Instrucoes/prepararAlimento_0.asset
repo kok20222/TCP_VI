@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 483f33546b29cff46b0212750af78b73, type: 3}
+  m_Name: prepararAlimento_0
+  m_EditorClassIdentifier: 
+  life: 5
+  level: 1
+  destiction:
+    nextState: 0b0000000100000007000000
+    mandatory:
+    - target: 1
+      element: {fileID: 7426789148018181067, guid: 0b703b239cd46cc418278fec4ff7c55e,
+        type: 3}
+    - target: 1
+      element: {fileID: 9083206493745190036, guid: 55e0500c8afb1ae46aca455ee4dab773,
+        type: 3}
+    - target: 1
+      element: {fileID: 5220887850340931838, guid: 5bbf7a3b208c41d448f1d132a3ad146c,
+        type: 3}
+    - target: 1
+      element: {fileID: 2941692355991198669, guid: 5d1e74150eee1c140bc8af5a3e7e62e9,
+        type: 3}
+    bonus:
+    - {fileID: 7505378114445952015, guid: 7982a722093a6794f9269a5135791a8e, type: 3}

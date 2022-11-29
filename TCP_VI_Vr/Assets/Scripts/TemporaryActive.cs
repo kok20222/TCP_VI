@@ -7,8 +7,11 @@ public class TemporaryActive : MonoBehaviour
 {
     public UnityEvent e = new UnityEvent();
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        e.Invoke();
+        if (Input.GetMouseButtonDown(0) && other.CompareTag("Active"))
+        {
+            e.Invoke();
+        }
     }
 }

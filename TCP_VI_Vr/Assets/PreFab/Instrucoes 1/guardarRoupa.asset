@@ -10,23 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 483f33546b29cff46b0212750af78b73, type: 3}
-  m_Name: lavarRoupa_basico
+  m_Name: guardarRoupa
   m_EditorClassIdentifier: 
-  life: 10
-  level: 0
+  life: 0
+  level: 3
   destiction:
-    nextState: 010000000900000002000000
+    nextState: 0000000002000000090000000e000000
     mandatory:
     - target: 1
       element: {fileID: 6106718529241751514, guid: cc803c08d4dc2eb43acb8676e3fa25b5,
         type: 3}
     - target: 1
-      element: {fileID: 3585985183067572532, guid: 42e37a9f73bae3b478b409d68e3da8f9,
-        type: 3}
-    - target: 1
       element: {fileID: 3665352090881920771, guid: 77d1d3fea93ebb243aee30b1f541a028,
         type: 3}
     - target: 1
-      element: {fileID: 4982030353111188499, guid: b4c07b3e548b09e43a2435536a410782,
+      element: {fileID: 3585985183067572532, guid: 42e37a9f73bae3b478b409d68e3da8f9,
         type: 3}
     bonus: []
