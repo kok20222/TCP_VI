@@ -3417,6 +3417,12 @@ Transform:
   m_Father: {fileID: 355812365}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &299488854 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3585985183067572532, guid: 42e37a9f73bae3b478b409d68e3da8f9,
+    type: 3}
+  m_PrefabInstance: {fileID: 3585985183375381268}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &301059863
 GameObject:
   m_ObjectHideFlags: 0
@@ -12039,6 +12045,7 @@ GameObject:
   - component: {fileID: 1007620133}
   - component: {fileID: 1007620136}
   - component: {fileID: 1007620135}
+  - component: {fileID: 1007620137}
   - component: {fileID: 1007620134}
   m_Layer: 0
   m_Name: Left Hand
@@ -12119,7 +12126,19 @@ MonoBehaviour:
       m_Calls: []
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1007620137}
+        m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+        m_MethodName: drop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -12197,6 +12216,18 @@ MonoBehaviour:
   m_MoveObjectIn: 14
   m_MoveObjectOut: 15
   m_PoseProvider: {fileID: 0}
+--- !u!114 &1007620137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007620132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d5699118c53f8b48b8cb3357c58a301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1011361833
 GameObject:
   m_ObjectHideFlags: 0
@@ -16188,6 +16219,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1441295120}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1441729603 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6106718529241751514, guid: cc803c08d4dc2eb43acb8676e3fa25b5,
+    type: 3}
+  m_PrefabInstance: {fileID: 6106718530034230417}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1450739554
 GameObject:
   m_ObjectHideFlags: 0
@@ -20497,6 +20534,7 @@ GameObject:
   - component: {fileID: 1846520845}
   - component: {fileID: 1846520842}
   - component: {fileID: 1846520844}
+  - component: {fileID: 1846520846}
   - component: {fileID: 1846520843}
   m_Layer: 0
   m_Name: Right Hand
@@ -20577,7 +20615,7 @@ MonoBehaviour:
   m_HoverExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 383334913}
+      - m_Target: {fileID: 1846520846}
         m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
         m_MethodName: drop
         m_Mode: 1
@@ -20594,7 +20632,19 @@ MonoBehaviour:
       m_Calls: []
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1846520846}
+        m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+        m_MethodName: drop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -20655,6 +20705,18 @@ Transform:
   m_Father: {fileID: 1138002936}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1846520846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1846520841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d5699118c53f8b48b8cb3357c58a301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1868971849 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: bf57667639ff7af43beaa159810f6804,
@@ -21735,6 +21797,12 @@ Transform:
   m_Father: {fileID: 507354083}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2021626568 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3665352090881920771, guid: 77d1d3fea93ebb243aee30b1f541a028,
+    type: 3}
+  m_PrefabInstance: {fileID: 3665352091920686748}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2026714386
 GameObject:
   m_ObjectHideFlags: 0
@@ -24928,12 +24996,22 @@ PrefabInstance:
     - target: {fileID: -7252122815418631182, guid: 42e37a9f73bae3b478b409d68e3da8f9,
         type: 3}
       propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7252122815418631182, guid: 42e37a9f73bae3b478b409d68e3da8f9,
+        type: 3}
+      propertyPath: m_Constraints
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3585985183067572532, guid: 42e37a9f73bae3b478b409d68e3da8f9,
         type: 3}
       propertyPath: m_Name
       value: "Samba_Can\xE7\xE3o"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585985183067572532, guid: 42e37a9f73bae3b478b409d68e3da8f9,
+        type: 3}
+      propertyPath: m_TagString
+      value: roupa
       objectReference: {fileID: 0}
     - target: {fileID: 3585985183260244388, guid: 42e37a9f73bae3b478b409d68e3da8f9,
         type: 3}
@@ -25019,6 +25097,20 @@ BoxCollider:
     type: 3}
   m_PrefabInstance: {fileID: 3585985183375381268}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &3585985183375381287
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299488854}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 9091438463179215688, guid: eab1617628c1e8842a32cf865605923c, type: 3}
 --- !u!1001 &3665352091920686748
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25031,11 +25123,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jaqueta
       objectReference: {fileID: 0}
+    - target: {fileID: 3665352090881920771, guid: 77d1d3fea93ebb243aee30b1f541a028,
+        type: 3}
+      propertyPath: m_TagString
+      value: roupa
+      objectReference: {fileID: 0}
     - target: {fileID: 3665352090881920824, guid: 77d1d3fea93ebb243aee30b1f541a028,
         type: 3}
       propertyPath: m_Colliders.Array.data[0]
       value: 
       objectReference: {fileID: 3665352091920686757}
+    - target: {fileID: 3665352090881920825, guid: 77d1d3fea93ebb243aee30b1f541a028,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3665352090881920825, guid: 77d1d3fea93ebb243aee30b1f541a028,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3665352091950090530, guid: 77d1d3fea93ebb243aee30b1f541a028,
         type: 3}
       propertyPath: m_RootOrder
@@ -25105,6 +25212,20 @@ BoxCollider:
     type: 3}
   m_PrefabInstance: {fileID: 3665352091920686748}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &3665352091920686762
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021626568}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4989301779144947376, guid: 34493c9c094f4af48aabd63c2ca1ab8f, type: 3}
 --- !u!1001 &4982030352082047497
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25572,6 +25693,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: camisa
       objectReference: {fileID: 0}
+    - target: {fileID: 6106718529241751514, guid: cc803c08d4dc2eb43acb8676e3fa25b5,
+        type: 3}
+      propertyPath: m_TagString
+      value: roupa
+      objectReference: {fileID: 0}
     - target: {fileID: 6106718529241751517, guid: cc803c08d4dc2eb43acb8676e3fa25b5,
         type: 3}
       propertyPath: m_Materials.Array.data[1]
@@ -25632,6 +25758,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8783936477547932688, guid: cc803c08d4dc2eb43acb8676e3fa25b5,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc803c08d4dc2eb43acb8676e3fa25b5, type: 3}
 --- !u!23 &6106718530034230428 stripped
@@ -25646,6 +25777,20 @@ BoxCollider:
     type: 3}
   m_PrefabInstance: {fileID: 6106718530034230417}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &6106718530034230435
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441729603}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 965809185053513122, guid: 9bccac7964fe3794893b095b4820add4, type: 3}
 --- !u!1001 &7426789148057900246
 PrefabInstance:
   m_ObjectHideFlags: 0

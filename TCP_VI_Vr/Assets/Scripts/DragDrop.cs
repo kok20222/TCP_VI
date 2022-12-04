@@ -13,34 +13,36 @@ public class DragDrop : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.layer == LayerMask.NameToLayer("Grab") && Input.GetMouseButtonDown(0))
+        if (other.gameObject.layer == LayerMask.NameToLayer("Grab") /* && Input.GetMouseButtonDown(0)*/ )
         {
             distance = other.transform.position-transform.position;
             target = other.gameObject;
-            drag();
+            // drag();
         }
     }
 
     public void drop()
     {
-        check = false;
+        //check = false;
         target.GetComponent<ITecnology>().Combine();
     }
-    public void drag()
-    {
-        check = true;
-    }
 
-    private void Update()
-    {
-        if (check)
-        {
-            if (Input.GetMouseButtonUp(0))
-            {
-                drop();
-            }
-            Transform t = target.GetComponent<Transform>().transform;
-            t.position = transform.position + distance;
-        }
-    }
+    // public void drag()
+    // {
+    //     check = true;
+    // }
+
+ 
+    // private void Update()
+    // {
+    //     if (check)
+    //     {
+    //         if (Input.GetMouseButtonUp(0))
+    //         {
+    //             drop();
+    //         }
+    //         Transform t = target.GetComponent<Transform>().transform;
+    //         t.position = transform.position + distance;
+    //     }
+    // }
 }

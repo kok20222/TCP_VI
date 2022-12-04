@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 622041996073157738}
   - component: {fileID: 622041996073157716}
   - component: {fileID: 622041996073157717}
+  - component: {fileID: 4426071565647134046}
   - component: {fileID: 622041996073157719}
   m_Layer: 0
   m_Name: MaquinadeLavar
@@ -677,6 +678,18 @@ MonoBehaviour:
   eventInterrupt:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &4426071565647134046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315399547773647167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 253476328e6020e4ea4926689119fdca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &622041996073157719
 MonoBehaviour:
   m_ObjectHideFlags: 0
