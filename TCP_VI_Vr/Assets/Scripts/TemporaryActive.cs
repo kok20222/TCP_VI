@@ -1,3 +1,4 @@
+using ActivitSystem;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,40 +6,21 @@ using UnityEngine.Events;
 
 public class TemporaryActive : MonoBehaviour
 {
-
-    bool check = false;
-
-    
-    public UnityEvent e = new UnityEvent();
-
+    private GameObject obj = null;
     private void OnTriggerStay(Collider other)
     {
-
-        
-        if (other.CompareTag("hand") && check)
+        if (other.CompareTag("Activity"))
         {
-            Debug.Log("entrou mão");
-            check = false;
-            e.Invoke();
-            
+            obj = other.gameObject;
         }
-
-
-        
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        obj = null;
     }
 
-    
-
-
-
-    public void active() {
-
-        
-        check = true;
-        
-       
-
+    public void PowerOn()
+    {
+        obj.GetComponent<Activity>().Check();
     }
-
-
 }

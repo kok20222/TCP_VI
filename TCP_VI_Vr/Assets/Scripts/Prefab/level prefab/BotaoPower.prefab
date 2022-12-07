@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6258225421178589134}
   m_Layer: 10
   m_Name: BotaoPower
-  m_TagString: Untagged
+  m_TagString: Acitivity
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5840969678832391385}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.002949, y: -0.003122, z: 0.004694}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -113,8 +113,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.00024582422, y: 0.00021216672, z: 0.00020919795}
-  m_Center: {x: -0.0000000037252903, y: -0.000094409974, z: 0.0000000027939677}
+  m_Size: {x: 0.0012237638, y: 0.00074725435, z: 0.0010381162}
+  m_Center: {x: 0.00009615391, y: -0.00036195375, z: 0.000012618899}
 --- !u!114 &6258225421178589134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,18 +127,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b1b4932aa448cb479af2d54e079059d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  e:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ActivitSystem.Activity, Assembly-CSharp
-        m_MethodName: Check
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
