@@ -7,10 +7,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2658237194888309724, guid: 55e0500c8afb1ae46aca455ee4dab773,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9083206493745190036, guid: 55e0500c8afb1ae46aca455ee4dab773,
         type: 3}
       propertyPath: m_Name
-      value: Alimento_2
+      value: Alimento_2 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 9083206493745190036, guid: 55e0500c8afb1ae46aca455ee4dab773,
         type: 3}

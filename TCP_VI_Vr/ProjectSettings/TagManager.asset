@@ -10,6 +10,7 @@ TagManager:
   - roupa
   - CinemachineTarget
   - Active
+  - hand
   layers:
   - Default
   - TransparentFX

@@ -8,7 +8,7 @@ public class TirarGravidade : MonoBehaviour
 
    private GameObject target;
     Rigidbody item;
-
+    
 
 
    
@@ -45,7 +45,7 @@ public class TirarGravidade : MonoBehaviour
             
         }
 
-        void Ativar(){
+        public void Ativar(){
 
           item.constraints = RigidbodyConstraints.None;
           item.useGravity = true;
