@@ -23,7 +23,7 @@ MonoBehaviour:
     - target: 1
       element: {fileID: 3665352090881920771, guid: 77d1d3fea93ebb243aee30b1f541a028,
         type: 3}
-    - target: 1
+    - target: 0
       element: {fileID: 4982030353111188499, guid: b4c07b3e548b09e43a2435536a410782,
         type: 3}
     bonus: []

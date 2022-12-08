@@ -6,21 +6,20 @@ using UnityEngine.Events;
 
 public class TemporaryActive : MonoBehaviour
 {
-    private GameObject obj = null;
-    private void OnTriggerStay(Collider other)
+    
+    public Activity target;
+
+    
+    private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Activity"))
+
+      
+        if (other.CompareTag("hand"))
         {
-            obj = other.gameObject;
+              
+            target.GetComponent<Activity>().Check();
         }
     }
-    private void OnTriggerExit(Collider other)
-    {
-        obj = null;
-    }
-
-    public void PowerOn()
-    {
-        obj.GetComponent<Activity>().Check();
-    }
+  
+    
 }

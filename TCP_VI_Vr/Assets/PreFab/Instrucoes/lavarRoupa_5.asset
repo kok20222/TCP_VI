@@ -20,7 +20,7 @@ MonoBehaviour:
     - target: 1
       element: {fileID: 6106718529241751514, guid: cc803c08d4dc2eb43acb8676e3fa25b5,
         type: 3}
-    - target: 1
+    - target: 0
       element: {fileID: 4982030353111188499, guid: b4c07b3e548b09e43a2435536a410782,
         type: 3}
     bonus:
