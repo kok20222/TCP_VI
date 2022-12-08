@@ -8,14 +8,14 @@ public class TirarGravidade : MonoBehaviour
     Rigidbody item;
 
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerStay(Collider other)
     {
 
         if (other.tag == "roupa")
         {
             Debug.Log("entrou");
             item = other.GetComponent<Rigidbody>();
-            item.useGravity = false;
+           item.useGravity = false;
             item.constraints = RigidbodyConstraints.FreezePosition;
             // item.isKinematic = true;
         }
@@ -34,7 +34,7 @@ public class TirarGravidade : MonoBehaviour
     public void Ativar()
     {
         item.constraints = RigidbodyConstraints.None;
-        //item.useGravity = true;
+        item.useGravity = true;
 
         //item.isKinematic = false;
     }
