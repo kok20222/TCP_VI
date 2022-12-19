@@ -34,6 +34,11 @@ public class Equipment : MonoBehaviour, ITecnology
                 targetIndex = (targetIndex + 1) % target.GetComponent<ITecnology>().Amount;
                 LeanTween.move(gameObject, target.GetComponent<ITecnology>().Position, .4f);
             }
+            if (target.GetComponent<ITecnology>().Amount == 1)
+            {
+
+                LeanTween.move(gameObject, target.GetComponent<ITecnology>().Position, .4f);
+            }
             target = null;
         }
         else {
