@@ -46,15 +46,20 @@ namespace TargetSystem
         public void Combine() {
             if (target != null)
             {
+                target.GetComponent<Rigidbody>().useGravity = false;
                 if (target.GetComponent<ITecnology>().Amount > 0)
                 {
                     LeanTween.move(gameObject, target.GetComponent<ITecnology>().Position, .4f);
                 }
-                if (target.GetComponent<ITecnology>().Amount  == 1) {
+                if (target.GetComponent<ITecnology>().Amount == 1)
+                {
 
                     LeanTween.move(gameObject, target.GetComponent<ITecnology>().Position, .4f);
                 }
                 target = null;
+            }
+            else {
+                GetComponent<Rigidbody>().useGravity = true;
             }
         }
         public void Consume(List<State> state)
