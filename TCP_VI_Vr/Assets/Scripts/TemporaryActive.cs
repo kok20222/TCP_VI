@@ -16,7 +16,8 @@ public class TemporaryActive : MonoBehaviour
       
         if (other.CompareTag("hand"))
         {
-              
+            
+            Debug.Log("hand check");
             target.GetComponent<Activity>().Check();
         }
     }
