@@ -46,7 +46,7 @@ namespace TargetSystem
         public void Combine() {
             if (target != null)
             {
-                target.GetComponent<Rigidbody>().useGravity = false;
+                GetComponent<Rigidbody>().useGravity = false;
                 if (target.GetComponent<ITecnology>().Amount > 0)
                 {
                     LeanTween.move(gameObject, target.GetComponent<ITecnology>().Position, .4f);
