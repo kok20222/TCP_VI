@@ -48,7 +48,7 @@ public class Tool : MonoBehaviour, ITecnology
     public void Combine()
     {
         if (target != null)
-        
+        {
             if (target.GetComponent<ITecnology>().Amount > 0)
             {
                 LeanTween.move(gameObject, target.GetComponent<ITecnology>().Position, .4f);
