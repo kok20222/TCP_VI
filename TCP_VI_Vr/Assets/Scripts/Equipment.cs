@@ -28,13 +28,17 @@ public class Equipment : MonoBehaviour, ITecnology
     {
         if (target != null)
         {
-            Debug.Log(target.GetComponent<ITecnology>().Amount);
+            target.GetComponent<Rigidbody>().useGravity = false;
             if (target.GetComponent<ITecnology>().Amount > 0)
             {
                 targetIndex = (targetIndex + 1) % target.GetComponent<ITecnology>().Amount;
                 LeanTween.move(gameObject, target.GetComponent<ITecnology>().Position, .4f);
             }
             target = null;
+        }
+        else {
+
+            target.GetComponent<Rigidbody>().useGravity = true;
         }
     }
     public void SwitchOn()

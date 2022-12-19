@@ -49,6 +49,7 @@ public class Tool : MonoBehaviour, ITecnology
     {
         if (target != null)
         {
+            target.GetComponent<Rigidbody>().useGravity = false;
             if (target.GetComponent<ITecnology>().Amount > 0)
             {
                 LeanTween.move(gameObject, target.GetComponent<ITecnology>().Position, .4f);
@@ -59,6 +60,11 @@ public class Tool : MonoBehaviour, ITecnology
                 LeanTween.move(gameObject, target.GetComponent<ITecnology>().Position, .4f);
             }
             target = null;
+        }
+        else
+        {
+
+            target.GetComponent<Rigidbody>().useGravity = true;
         }
     }
 
