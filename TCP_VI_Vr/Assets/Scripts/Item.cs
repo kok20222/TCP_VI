@@ -46,7 +46,7 @@ namespace TargetSystem
         public void Combine() {
             if (target != null)
             {
-                GetComponent<Rigidbody>().useGravity = false;
+                GetComponent<Rigidbody>().isKinematic = true ;
                 if (target.GetComponent<ITecnology>().Amount > 0)
                 {
                     targetIndex = (targetIndex + 1) % target.GetComponent<ITecnology>().Amount;
@@ -60,7 +60,7 @@ namespace TargetSystem
                 target = null;
             }
             else {
-                GetComponent<Rigidbody>().useGravity = true;
+                GetComponent<Rigidbody>().isKinematic = false;
             }
         }
         public void Consume(List<State> state)
