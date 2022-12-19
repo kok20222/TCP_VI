@@ -49,6 +49,7 @@ namespace TargetSystem
                 GetComponent<Rigidbody>().useGravity = false;
                 if (target.GetComponent<ITecnology>().Amount > 0)
                 {
+                    targetIndex = (targetIndex + 1) % target.GetComponent<ITecnology>().Amount;
                     LeanTween.move(gameObject, target.GetComponent<ITecnology>().Position, .4f);
                 }
                 if (target.GetComponent<ITecnology>().Amount == 1)

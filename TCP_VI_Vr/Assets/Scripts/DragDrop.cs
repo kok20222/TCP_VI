@@ -16,11 +16,8 @@ public class DragDrop : MonoBehaviour
         if (other.gameObject.layer == LayerMask.NameToLayer("Grab") /* && Input.GetMouseButtonDown(0)*/ )
         {
             //distance = other.transform.position-transform.position;
-            //target = other.gameObject;
-            // drag();
-        }
-        else if (other.GetComponent<ITecnology>() != null && other.gameObject.layer != LayerMask.NameToLayer("Grab")) {
             target = other.gameObject;
+            // drag();
         }
     }
 
