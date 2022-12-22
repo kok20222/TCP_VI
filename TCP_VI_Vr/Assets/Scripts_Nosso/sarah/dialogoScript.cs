@@ -21,7 +21,7 @@ public class dialogoScript : MonoBehaviour
     {
             idText++;
             dialogoUi.text = dialogoText[idText];
-            if (idText >= 4)
+            if (idText >= 3)
             {
                 setaUI.SetActive(false);
                 fecharUi.SetActive(true);
