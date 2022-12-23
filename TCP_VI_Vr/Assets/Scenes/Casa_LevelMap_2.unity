@@ -8362,6 +8362,7 @@ GameObject:
   - component: {fileID: 471813457}
   - component: {fileID: 471813456}
   - component: {fileID: 471813460}
+  - component: {fileID: 471813461}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -8476,6 +8477,21 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RaycastTriggerInteraction: 1
+--- !u!114 &471813461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471813455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e266c95ce2f0d3845a37f39f1d895744, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseUi: {fileID: 1630776836}
+  camera: {fileID: 1459019259}
+  canvasHand: {fileID: 1508637819}
 --- !u!1 &474441444
 GameObject:
   m_ObjectHideFlags: 0
@@ -19777,7 +19793,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -25573,7 +25589,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1508637820
 RectTransform:
   m_ObjectHideFlags: 0
