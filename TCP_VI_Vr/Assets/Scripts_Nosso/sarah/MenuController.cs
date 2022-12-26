@@ -16,6 +16,7 @@ public class MenuController : MonoBehaviour
     public GameObject derrotaUI;
     public TMP_Text TextTimeHand;
     public GameObject iniciarBtn;
+    public GameObject imageCheck0, imageCheck1;
     public float valor;
     
     public static MenuController instance;
@@ -61,6 +62,19 @@ public class MenuController : MonoBehaviour
         Contador1.IniciarContador((int)valor);
     }
 
+    public void chooseMov(int i){
+        if(i==0){
+            imageCheck0.SetActive(true);
+            imageCheck1.SetActive(false);
+            //chamar analogico
+        }
+        if(i==1){
+            imageCheck0.SetActive(false);
+            imageCheck1.SetActive(true);
+            //chamar teleporte
+        }
+        
+    }
 
     
     private void FixedUpdate()
@@ -86,5 +100,5 @@ public class MenuController : MonoBehaviour
         }
         
     }
-
+    
 }
