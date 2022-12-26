@@ -19,7 +19,8 @@ public class MenuController : MonoBehaviour
     public GameObject imageCheck0, imageCheck1;
     public GameObject imag0, imag1;
     public float valor;
-    
+    public Slider mental, comida, higiene;
+    public TMP_Text mText, cText, hText;
     public static MenuController instance;
     contagemRegressiva Contador1 = new contagemRegressiva();
     public TMP_Text TextTime1;
@@ -28,6 +29,23 @@ public class MenuController : MonoBehaviour
     // Start is called before the first frame update
     void Start() {
         instance = this;
+        mental.value=0.5f;
+        
+        comida.value=0.5f;
+        
+        higiene.value=0.5f;
+        
+    }
+    public void atualizarSliders(int i){
+        if(i==0){
+            mText.text=(mental.value*100).ToString()+"%";
+        }
+        if(i==1){
+            cText.text=(comida.value*100).ToString()+"%";
+        }
+        if(i==2){
+            hText.text=(higiene.value*100).ToString()+"%";
+        }
     }
     void Awake() {
         DontDestroyOnLoad(transform.gameObject);
@@ -105,5 +123,6 @@ public class MenuController : MonoBehaviour
         }
         
     }
+    
     
 }
