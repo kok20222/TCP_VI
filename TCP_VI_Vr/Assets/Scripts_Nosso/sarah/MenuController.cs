@@ -17,6 +17,7 @@ public class MenuController : MonoBehaviour
     public TMP_Text TextTimeHand;
     public GameObject iniciarBtn;
     public GameObject imageCheck0, imageCheck1;
+    public GameObject imag0, imag1;
     public float valor;
     
     public static MenuController instance;
@@ -66,11 +67,15 @@ public class MenuController : MonoBehaviour
         if(i==0){
             imageCheck0.SetActive(true);
             imageCheck1.SetActive(false);
+            imag0.SetActive(true);
+            imag1.SetActive(false);
             //chamar analogico
         }
         if(i==1){
             imageCheck0.SetActive(false);
             imageCheck1.SetActive(true);
+            imag0.SetActive(false);
+            imag1.SetActive(true);
             //chamar teleporte
         }
         
