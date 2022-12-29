@@ -11,6 +11,7 @@ public class Maquina : MonoBehaviour
     public TMP_Text lavarroupa1;
     public int roupas = 2;
     bool aux=false;
+    int i=0;
     
     // Start is called before the first frame update
     void Start()
@@ -28,6 +29,7 @@ public class Maquina : MonoBehaviour
             lavarroupa1.text = "Tempo:  " + Contador1.FormatarTempo((int)Contador1.tempoTotal);
             if (roupas==3 && Contador1.tempoTotal <= 0)
             {
+                //chamar funcao que acabou tempo
                roupas=4;
             }
         }
@@ -35,31 +37,51 @@ public class Maquina : MonoBehaviour
         
 
         if(roupas == 3 && Contador1.IsRunning==false){
+            //se apertou botao
             contagemRegressiva();
             
 
         }
         if(roupas < 3){
-
-            
-        lavarroupa1.text =  roupas + "/3";
-
+            //se ainda nao apertoubotao
+            if(i==0){
+                 lavarroupa1.text = "Precisa-se lavar as 3 peças de roupa.";
+            }
+            if(i==1){
+                 lavarroupa1.text = "Coloque as roupas que achar certo, sabão em pó e clique o botão.";
+            }
+            if(i==2){
+                 lavarroupa1.text = "Dicas: Preste atenção nas cores, juntar cores com branco mancha!";
+            }
+        //lavarroupa1.text =  roupas + "/3";
+          
         } 
          if(roupas ==4){
+            //se acabou o tempo
             lavarroupa1.text =   "Lavagem finalizada!";
-            MenuController.instance.panelTrue(MenuController.instance.checks[1]);
-            MenuController.instance.panelTrue(MenuController.instance.checks[3]);
-            if(aux==false){
-                MenuController.instance.vitoryCond++;
-                aux=true;
-            }
-            
         }
 
-
+        //Debug.Log(i);
         
         
     }
+    public void passarTexto(int indicador){
+        
+        if(indicador==0){
+            if(i==1||i==0){
+                i++;
+            }
+            
+        }
+        if(indicador==1){
+            if(i==1||i==2){
+                i--;
+            }
+            
+        }
+        
+    }
+    /*
     void OnTriggerEnter(Collider other){
 
             if(other.tag == "roupa"){ 
@@ -89,7 +111,7 @@ public class Maquina : MonoBehaviour
 
 
         }
-
+*/
         public void contagemRegressiva()
     {
         
@@ -97,9 +119,5 @@ public class Maquina : MonoBehaviour
         
         //chamar funcao para abrir porta e come�ar o jogo
     }
-    private void FixedUpdate()
-    {
-        // Contador 1
-        
-    }
+    
 }

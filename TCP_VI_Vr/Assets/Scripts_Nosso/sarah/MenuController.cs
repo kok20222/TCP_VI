@@ -118,8 +118,8 @@ public class MenuController : MonoBehaviour
             
         }
         if(vitoryCond==3){
-            //float tempoSobra = Contador1.tempoInicial - Contador1.tempoTotal;
-             //SOBRA.text = Contador1.FormatarTempo((int)tempoSobra);
+            float tempoSobra = Contador1.tempoInicial - Contador1.tempoTotal;
+             SOBRA.text = Contador1.FormatarTempo((int)tempoSobra);
             panelTrue(vitoriaUI);
             Time.timeScale = 0;
         }
