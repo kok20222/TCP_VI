@@ -25,6 +25,8 @@ public class MenuController : MonoBehaviour
     contagemRegressiva Contador1 = new contagemRegressiva();
     public TMP_Text TextTime1;
     public int vitoryCond=0;
+    bool auxiliar = false;
+    int i,j;
 
     // Start is called before the first frame update
     void Start() {
@@ -115,13 +117,35 @@ public class MenuController : MonoBehaviour
              }
             
         }
-        if(vitoryCond==2){
-            float tempoSobra = Contador1.tempoInicial - Contador1.tempoTotal;
-             SOBRA.text = Contador1.FormatarTempo((int)tempoSobra);
+        if(vitoryCond==3){
+            //float tempoSobra = Contador1.tempoInicial - Contador1.tempoTotal;
+             //SOBRA.text = Contador1.FormatarTempo((int)tempoSobra);
             panelTrue(vitoriaUI);
             Time.timeScale = 0;
         }
         
+    }
+    public void tasksCompletadas(string task){
+        
+        auxiliar=false;
+        if(task=="maquina"){
+            i=0;
+        }
+        if(task=="varal"){
+            i=1;
+        }
+        if(task=="comida"){
+            i=2;
+        }
+        j=i+3;
+        panelTrue(checks[i]);
+        panelTrue(checks[j]);
+        if(auxiliar==false){
+            vitoryCond++;
+            auxiliar=true;
+        }
+        
+        //tarefa feita
     }
     
     
