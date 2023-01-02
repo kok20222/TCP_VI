@@ -104,6 +104,7 @@ public class MenuController : MonoBehaviour
     
     private void FixedUpdate()
     {
+        Debug.Log("cond: "+vitoryCond);
         if (Contador1.IsRunning)
         {
             Contador1.Contagem(); // Contando...
@@ -126,23 +127,25 @@ public class MenuController : MonoBehaviour
     }
     public void tasksCompletadas(string task){
         
-        auxiliar=false;
         if(task=="maquina"){
              maquinaCheck.SetActive(true);
              a.SetActive(true);
+         if(auxiliar==false){
+            vitoryCond++;
+            auxiliar=true;
+        }
         }
         if(task=="varal"){
              varalCheck.SetActive(true);
              b.SetActive(true);
+              vitoryCond++;
         }
         if(task=="comida"){
              comidaCheck.SetActive(true);
              c.SetActive(true);
+              vitoryCond++;
         }
-        if(auxiliar==false){
-            vitoryCond++;
-            auxiliar=true;
-        }
+        
         
         //tarefa feita
     }
