@@ -5,44 +5,27 @@ using TMPro;
 
 public class Maquina : MonoBehaviour
 {
-
+    public static Maquina instance;
     contagemRegressiva Contador1 = new contagemRegressiva();
 
     public TMP_Text lavarroupa1;
-    public int roupas = 2;
+    public int roupas = 0;
     bool aux=false;
     int i=0;
+    public GameObject[] SETAS;
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        instance = this;
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        if (Contador1.IsRunning)
-        {
-            Contador1.Contagem(); // Contando...
-            lavarroupa1.text = "Tempo:  " + Contador1.FormatarTempo((int)Contador1.tempoTotal);
-            if (roupas==3 && Contador1.tempoTotal <= 0)
-            {
-                //chamar funcao que acabou tempo
-               roupas=4;
-            }
-        }
-
         
-
-        if(roupas == 3 && Contador1.IsRunning==false){
-            //se apertou botao
-            contagemRegressiva();
-            
-
-        }
-        if(roupas < 3){
+        if(roupas ==0){
             //se ainda nao apertoubotao
             if(i==0){
                  lavarroupa1.text = "Precisa-se lavar as 3 peças de roupa.";
@@ -53,10 +36,10 @@ public class Maquina : MonoBehaviour
             if(i==2){
                  lavarroupa1.text = "Dicas: Preste atenção nas cores, juntar cores com branco mancha!";
             }
-        //lavarroupa1.text =  roupas + "/3";
+      
           
         } 
-         if(roupas ==4){
+         if(roupas==2){
             //se acabou o tempo
             lavarroupa1.text =   "Lavagem finalizada!";
         }
@@ -81,43 +64,7 @@ public class Maquina : MonoBehaviour
         }
         
     }
-    /*
-    void OnTriggerEnter(Collider other){
-
-            if(other.tag == "roupa"){ 
-
-
-                 roupas ++;
-
-            }
-            
-
-
-
-        }
-
-
-
-        void OnTriggerExit(Collider other){
-
-            if(other.tag == "roupa"){
-
-
-                roupas --;
-
-            }
-            
-
-
-
-        }
-*/
-        public void contagemRegressiva()
-    {
-        
-            Contador1.IniciarContador(20f);
-        
-        //chamar funcao para abrir porta e come�ar o jogo
-    }
+   
+      
     
 }

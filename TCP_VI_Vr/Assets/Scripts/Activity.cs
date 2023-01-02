@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TargetSystem;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 namespace ActivitSystem
 {
@@ -45,6 +46,7 @@ namespace ActivitSystem
         private ActivityState currente = ActivityState.to_do;
         private Destiction destiction;
         private string instruction;
+        contagemRegressiva Contador1 = new contagemRegressiva();
 
         private void Awake()
         {
@@ -58,6 +60,7 @@ namespace ActivitSystem
         }
         private void Update()
         {
+            
             switch (currente)
             {
                 case ActivityState.to_do:
@@ -65,10 +68,19 @@ namespace ActivitSystem
                 case ActivityState.does:
                     {
                         countTime -= Time.deltaTime;
+                        Maquina.instance.lavarroupa1.text =Contador1.FormatarTempo((int)countTime);
+                        Maquina.instance.SETAS[0].SetActive(false);
+                        Maquina.instance.SETAS[1].SetActive(false);
+                       
+
+
                         if (countTime < 0)
                         {
                             currente = ActivityState.done;
+                             Maquina.instance.roupas=2;
                             MakeThis();
+                        }else{
+                             Maquina.instance.roupas=1;
                         }
                         break;
                     }
@@ -98,7 +110,7 @@ namespace ActivitSystem
                     int verified = 0;
                     foreach (Mandatory mandatory in i.destiction.mandatory)
                     {
-                        //em vez de imperdir que uma tarefa seja feita é preferivel não pontuar
+                        //em vez de imperdir que uma tarefa seja feita ï¿½ preferivel nï¿½o pontuar
                         Debug.Log("mandatorio " + mandatory.element.name);
                         if (targets.ContainsKey(mandatory.element.name) && i.level <= s.level)
                         {

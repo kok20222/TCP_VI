@@ -13318,7 +13318,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -29595,6 +29595,7 @@ GameObject:
   - component: {fileID: 1448302256}
   - component: {fileID: 1448302255}
   - component: {fileID: 1448302258}
+  - component: {fileID: 1448302259}
   m_Layer: 5
   m_Name: Canvas (1)
   m_TagString: Untagged
@@ -29697,6 +29698,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c15ea8962614815429ddd328acaee71f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1448302259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448302253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7951c64acb0fa62458bf30a60089fe2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 0
+  m_CheckFor2DOcclusion: 0
+  m_CheckFor3DOcclusion: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RaycastTriggerInteraction: 1
 --- !u!1 &1450739554
 GameObject:
   m_ObjectHideFlags: 0
@@ -30786,6 +30806,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lavarroupa1: {fileID: 1718537603}
   roupas: 0
+  SETAS:
+  - {fileID: 1675457119}
+  - {fileID: 640476456}
 --- !u!114 &1499944926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31164,35 +31187,7 @@ MonoBehaviour:
   - id: {fileID: 11400000, guid: 7cb48e8153f918b47971b22c10d875c2, type: 2}
     FeedbackEvent:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 948869536}
-          m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
-          m_MethodName: tasksCompletadas
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: maquina
-            m_BoolArgument: 0
-          m_CallState: 2
-  - id: {fileID: 11400000, guid: c73228e8d9f1b1e4cbc77614eda6ceea, type: 2}
-    FeedbackEvent:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 948869536}
-          m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
-          m_MethodName: tasksCompletadas
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: maquina
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
   eventInterrupt:
     m_PersistentCalls:
       m_Calls: []
@@ -34266,7 +34261,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

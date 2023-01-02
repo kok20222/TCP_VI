@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class contagemRegressiva : MonoBehaviour
 {
+    
     public float tempoTotal;
     public float tempoInicial;
     private bool isRunning, tempoZerado;
