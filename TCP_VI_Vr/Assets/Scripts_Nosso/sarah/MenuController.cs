@@ -16,7 +16,7 @@ public class MenuController : MonoBehaviour
     public GameObject derrotaUI;
     public TMP_Text TextTimeHand;
     public GameObject iniciarBtn;
-    public GameObject imageCheck0, imageCheck1;
+    public GameObject imageCheck0, imageCheck1, maquinaCheck, varalCheck, comidaCheck, a,b,c;
     public GameObject imag0, imag1;
     public float valor;
     public Slider mental, comida, higiene;
@@ -104,7 +104,6 @@ public class MenuController : MonoBehaviour
     
     private void FixedUpdate()
     {
-        // Contador 1
         if (Contador1.IsRunning)
         {
             Contador1.Contagem(); // Contando...
@@ -129,17 +128,17 @@ public class MenuController : MonoBehaviour
         
         auxiliar=false;
         if(task=="maquina"){
-            i=0;
+             maquinaCheck.SetActive(true);
+             a.SetActive(true);
         }
         if(task=="varal"){
-            i=1;
+             varalCheck.SetActive(true);
+             b.SetActive(true);
         }
         if(task=="comida"){
-            i=2;
+             comidaCheck.SetActive(true);
+             c.SetActive(true);
         }
-        j=i+3;
-        panelTrue(checks[i]);
-        panelTrue(checks[j]);
         if(auxiliar==false){
             vitoryCond++;
             auxiliar=true;
