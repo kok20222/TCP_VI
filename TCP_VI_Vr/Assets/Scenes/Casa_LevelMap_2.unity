@@ -1042,8 +1042,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Lave os alimentos na pia, corte-os na t\xE1bua, e ponha-os para cozinhar"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2741c7acf457e664ead325f3debb07c7, type: 2}
+  m_sharedMaterial: {fileID: 6257536137976027355, guid: 2741c7acf457e664ead325f3debb07c7,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5526,6 +5527,11 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 698243928}
+    - target: {fileID: 6258225421178589134, guid: ba9cf485aaeb96040945f8c2ed9b3d0f,
+        type: 3}
+      propertyPath: witchTask
+      value: comidaCortar
+      objectReference: {fileID: 0}
     - target: {fileID: 8648657637280263758, guid: ba9cf485aaeb96040945f8c2ed9b3d0f,
         type: 3}
       propertyPath: m_RootOrder
@@ -8274,6 +8280,11 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 507354087}
+    - target: {fileID: 6258225421178589134, guid: ba9cf485aaeb96040945f8c2ed9b3d0f,
+        type: 3}
+      propertyPath: witchTask
+      value: comidaCozinhar
+      objectReference: {fileID: 0}
     - target: {fileID: 8648657637280263758, guid: ba9cf485aaeb96040945f8c2ed9b3d0f,
         type: 3}
       propertyPath: m_RootOrder
@@ -14110,6 +14121,11 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 355812369}
+    - target: {fileID: 6258225421178589134, guid: ba9cf485aaeb96040945f8c2ed9b3d0f,
+        type: 3}
+      propertyPath: witchTask
+      value: comidaLavar
+      objectReference: {fileID: 0}
     - target: {fileID: 8648657637280263758, guid: ba9cf485aaeb96040945f8c2ed9b3d0f,
         type: 3}
       propertyPath: m_RootOrder
@@ -25861,8 +25877,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: Ponha as 3 roupas para secar e abra a janela.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2741c7acf457e664ead325f3debb07c7, type: 2}
+  m_sharedMaterial: {fileID: 6257536137976027355, guid: 2741c7acf457e664ead325f3debb07c7,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -33816,6 +33833,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.014210037, y: 0.015463406, z: 0.0214361}
   m_Center: {x: 0, y: -0.0001666991, z: 0.010683521}
+--- !u!114 &1645296706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645296699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c843b4e12127e4fb07445b57b1ad02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comidaText: {fileID: 47729218}
+  comida: 0
 --- !u!1 &1651515142
 GameObject:
   m_ObjectHideFlags: 0
@@ -35175,8 +35206,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: new text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2741c7acf457e664ead325f3debb07c7, type: 2}
+  m_sharedMaterial: {fileID: 6257536137976027355, guid: 2741c7acf457e664ead325f3debb07c7,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

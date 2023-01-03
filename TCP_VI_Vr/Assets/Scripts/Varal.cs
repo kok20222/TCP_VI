@@ -9,7 +9,6 @@ public class Varal : MonoBehaviour
 
     public TMP_Text secarRoupa;
     public int roupas = 0;
-    bool aux=false;
     void Start()
     {
         instance = this;

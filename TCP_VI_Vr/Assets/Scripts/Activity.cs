@@ -49,6 +49,8 @@ namespace ActivitSystem
         private string taskName;
         contagemRegressiva Contador1 = new contagemRegressiva();
         contagemRegressiva Contador2 = new contagemRegressiva();
+        contagemRegressiva Contador3 = new contagemRegressiva();
+
 
 
         private void Awake()
@@ -79,15 +81,24 @@ namespace ActivitSystem
                         if(taskName=="varal"){
                             Varal.instance.secarRoupa.text =Contador2.FormatarTempo((int)countTime);
                         }
+                        if(taskName=="comidaLavar"||taskName=="comidaCortar"||taskName=="comidaCozinhar"){
+                            Fogao.instance.comidaText.text =Contador3.FormatarTempo((int)countTime);
+                        }
                         if (countTime < 0)
                         {
                             currente = ActivityState.done;
                              if(taskName=="maquina")Maquina.instance.roupas=2;
                              if(taskName=="varal")Varal.instance.roupas=2;
+                             if(taskName=="comidaLavar")Fogao.instance.comida=2;
+                             if(taskName=="comidaCortar")Fogao.instance.comida=3;
+                             if(taskName=="comidaCozinhar")Fogao.instance.comida=4;
                             MakeThis();
                         }else{
                              if(taskName=="maquina")Maquina.instance.roupas=1;
                              if(taskName=="varal")Varal.instance.roupas=1;
+                             if(taskName=="comidaLavar"||taskName=="comidaCortar"||taskName=="comidaCozinhar"){
+                                Fogao.instance.comida=1;
+                             }
 
                         }
                         break;
