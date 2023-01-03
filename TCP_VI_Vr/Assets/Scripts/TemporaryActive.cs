@@ -8,6 +8,7 @@ public class TemporaryActive : MonoBehaviour
 {
     
     public Activity target;
+    public string witchTask;
 
     
     private void OnTriggerEnter(Collider other)
@@ -18,7 +19,7 @@ public class TemporaryActive : MonoBehaviour
         {
             
             Debug.Log("hand check");
-            target.GetComponent<Activity>().Check();
+            target.GetComponent<Activity>().Check(witchTask);
         }
     }
   

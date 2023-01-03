@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3557,6 +3557,11 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1499944927}
+    - target: {fileID: 6258225421178589134, guid: ba9cf485aaeb96040945f8c2ed9b3d0f,
+        type: 3}
+      propertyPath: witchTask
+      value: maquina
+      objectReference: {fileID: 0}
     - target: {fileID: 8648657637280263758, guid: ba9cf485aaeb96040945f8c2ed9b3d0f,
         type: 3}
       propertyPath: m_RootOrder
@@ -7382,6 +7387,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  witchTask: 
 --- !u!54 &355390137
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24467,6 +24473,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 2201744691165852578}
+  witchTask: 
 --- !u!1 &1158966411
 GameObject:
   m_ObjectHideFlags: 0
@@ -37447,7 +37454,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 8c6097d37541b924facc9a2f794ba597,
         type: 3}
       propertyPath: m_RootOrder
-      value: 29
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8c6097d37541b924facc9a2f794ba597,
         type: 3}
@@ -38733,7 +38740,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 62984208c1152c543b1977b2221bcf83,
         type: 3}
       propertyPath: m_RootOrder
-      value: 28
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 62984208c1152c543b1977b2221bcf83,
         type: 3}
@@ -41189,6 +41196,11 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 442968216107928439}
+    - target: {fileID: 2239376269674100918, guid: 338e5977e5c4ad1498fd259e88495418,
+        type: 3}
+      propertyPath: witchTask
+      value: varal
+      objectReference: {fileID: 0}
     - target: {fileID: 2239376269674100920, guid: 338e5977e5c4ad1498fd259e88495418,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -43583,6 +43595,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 355812369}
+  witchTask: 
 --- !u!65 &2128526940
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -45392,6 +45405,7 @@ GameObject:
   - component: {fileID: 4282382867815775793}
   - component: {fileID: 442968216107928439}
   - component: {fileID: 5277787847836990844}
+  - component: {fileID: 5277787847836990845}
   m_Layer: 0
   m_Name: Varal_De_pe
   m_TagString: Untagged
@@ -51881,6 +51895,20 @@ MonoBehaviour:
   - {fileID: 7771055891913951648}
   - {fileID: 4091647067636666578}
   - {fileID: 338127023171915278}
+--- !u!114 &5277787847836990845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132147895475523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 256f0efc5a403c444898a90fd55348e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  secarRoupa: {fileID: 1242862357}
+  roupas: 0
 --- !u!33 &5325874226184970066
 MeshFilter:
   m_ObjectHideFlags: 0

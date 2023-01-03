@@ -46,7 +46,10 @@ namespace ActivitSystem
         private ActivityState currente = ActivityState.to_do;
         private Destiction destiction;
         private string instruction;
+        private string taskName;
         contagemRegressiva Contador1 = new contagemRegressiva();
+        contagemRegressiva Contador2 = new contagemRegressiva();
+
 
         private void Awake()
         {
@@ -68,19 +71,24 @@ namespace ActivitSystem
                 case ActivityState.does:
                     {
                         countTime -= Time.deltaTime;
-                        Maquina.instance.lavarroupa1.text =Contador1.FormatarTempo((int)countTime);
-                        Maquina.instance.SETAS[0].SetActive(false);
-                        Maquina.instance.SETAS[1].SetActive(false);
-                       
-
-
+                        if(taskName=="maquina"){
+                            Maquina.instance.lavarroupa1.text =Contador1.FormatarTempo((int)countTime);
+                            Maquina.instance.SETAS[0].SetActive(false);
+                            Maquina.instance.SETAS[1].SetActive(false);
+                        }
+                        if(taskName=="varal"){
+                            Varal.instance.secarRoupa.text =Contador2.FormatarTempo((int)countTime);
+                        }
                         if (countTime < 0)
                         {
                             currente = ActivityState.done;
-                             Maquina.instance.roupas=2;
+                             if(taskName=="maquina")Maquina.instance.roupas=2;
+                             if(taskName=="varal")Varal.instance.roupas=2;
                             MakeThis();
                         }else{
-                             Maquina.instance.roupas=1;
+                             if(taskName=="maquina")Maquina.instance.roupas=1;
+                             if(taskName=="varal")Varal.instance.roupas=1;
+
                         }
                         break;
                     }
@@ -97,7 +105,7 @@ namespace ActivitSystem
                 targets[other.name] = other;
             }
         }
-        public void Check()
+        public void Check(string nameTask)
         {
             foreach (var v in targets.Keys)
             {
@@ -117,6 +125,7 @@ namespace ActivitSystem
                             verified++;
                             if (verified == i.destiction.mandatory.Count)
                             {
+                                taskName = nameTask;
                                 s.Check = true;
                                 countTime = i.life;
                                 currentLife = i.life;
