@@ -10899,6 +10899,19 @@ MonoBehaviour:
           m_StringArgument: comida
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 948869540}
+        m_TargetAssemblyTypeName: AudioController, Assembly-CSharp
+        m_MethodName: efeitoInterface
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: dca40b5b25a300046ab813154de62c59,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   indetifiedFeedback: []
   eventInterrupt:
     m_PersistentCalls:
@@ -20451,6 +20464,9 @@ MonoBehaviour:
   audiosClips:
   - {fileID: 8300000, guid: 7c28e486c9a373f4ea952ca44d0918fb, type: 3}
   - {fileID: 8300000, guid: 9251d4a3b5b68fb4b95d5fddc993b225, type: 3}
+  - {fileID: 8300000, guid: 7a6d91d3de0bdd949b9c61b3f3618596, type: 3}
+  - {fileID: 8300000, guid: ebe03d4d6fd2f094ea7664bee39894cc, type: 3}
+  - {fileID: 8300000, guid: 6a792d609d138794ba4b5dd8bd77c5c4, type: 3}
 --- !u!82 &948869541
 AudioSource:
   m_ObjectHideFlags: 0
@@ -20465,7 +20481,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -31836,6 +31852,19 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: maquina
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 948869540}
+        m_TargetAssemblyTypeName: AudioController, Assembly-CSharp
+        m_MethodName: efeitoInterface
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: dca40b5b25a300046ab813154de62c59,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
   indetifiedFeedback:
@@ -46338,6 +46367,19 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: varal
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 948869540}
+        m_TargetAssemblyTypeName: AudioController, Assembly-CSharp
+        m_MethodName: efeitoInterface
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: dca40b5b25a300046ab813154de62c59,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
   indetifiedFeedback: []
