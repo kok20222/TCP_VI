@@ -47,6 +47,7 @@ namespace ActivitSystem
         private Destiction destiction;
         private string instruction;
         private string taskName;
+        public bool auxMaquina=false;
         contagemRegressiva Contador1 = new contagemRegressiva();
         contagemRegressiva Contador2 = new contagemRegressiva();
         contagemRegressiva Contador3 = new contagemRegressiva();
@@ -77,6 +78,12 @@ namespace ActivitSystem
                             Maquina.instance.lavarroupa1.text =Contador1.FormatarTempo((int)countTime);
                             Maquina.instance.SETAS[0].SetActive(false);
                             Maquina.instance.SETAS[1].SetActive(false);
+                            AudioController.instance.efeitoInterface(AudioController.instance.audiosClips[4]);
+                            if(auxMaquina==false){
+                                AudioController.instance.maquina.Play();
+                                auxMaquina=true;
+                            }
+                            AudioController.instance.maquina.Play();
                         }
                         if(taskName=="varal"){
                             Varal.instance.secarRoupa.text =Contador2.FormatarTempo((int)countTime);
@@ -87,7 +94,10 @@ namespace ActivitSystem
                         if (countTime < 0)
                         {
                             currente = ActivityState.done;
-                             if(taskName=="maquina")Maquina.instance.roupas=2;
+                             if(taskName=="maquina"){
+                                Maquina.instance.roupas=2;
+                                AudioController.instance.maquina.Stop();
+                             }
                              if(taskName=="varal")Varal.instance.roupas=2;
                              if(taskName=="comidaLavar")Fogao.instance.comida=2;
                              if(taskName=="comidaCortar")Fogao.instance.comida=3;

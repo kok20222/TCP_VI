@@ -9,6 +9,8 @@ public class AudioController : MonoBehaviour
     public Slider volumeSom, volumeSom2; 
     public Slider volumeEffect, vol2;
     public AudioSource msc;
+     public AudioSource maquina;
+     public AudioSource geladeira;
     public AudioSource efx;
     public AudioSource efxCena;
     public AudioClip btnCllick;
@@ -45,12 +47,16 @@ public class AudioController : MonoBehaviour
         {
            efx.volume = vol2.value*2;
            efxCena.volume = vol2.value*2;
+           maquina.volume = vol2.value*2;
+           geladeira.volume = vol2.value*2;
            volumeEffect.value = vol2.value;
         }
         public void ListenerMethod4(float v)
         {
            efx.volume = volumeEffect.value*2;
            efxCena.volume = volumeEffect.value*2;
+           maquina.volume = volumeEffect.value*2;
+           geladeira.volume = volumeEffect.value*2;
            vol2.value = volumeEffect.value;
         }
     

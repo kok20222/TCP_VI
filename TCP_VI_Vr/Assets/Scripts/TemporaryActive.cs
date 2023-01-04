@@ -20,8 +20,7 @@ public class TemporaryActive : MonoBehaviour
             
             Debug.Log("hand check");
             target.GetComponent<Activity>().Check(witchTask);
-            AudioController.instance.efeitoInterface(AudioController.instance.audiosClips[4]);
-            //AudioController.instance.efeitosound(AudioController.instance.audiosClips[5]);
+            target.GetComponent<Activity>().auxMaquina=false;
         }
     }
   
