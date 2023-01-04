@@ -78,12 +78,12 @@ namespace ActivitSystem
                             Maquina.instance.lavarroupa1.text =Contador1.FormatarTempo((int)countTime);
                             Maquina.instance.SETAS[0].SetActive(false);
                             Maquina.instance.SETAS[1].SetActive(false);
-                            AudioController.instance.efeitoInterface(AudioController.instance.audiosClips[4]);
+                            
                             if(auxMaquina==false){
+                                AudioController.instance.efeitoInterface(AudioController.instance.audiosClips[4]);
                                 AudioController.instance.maquina.Play();
                                 auxMaquina=true;
                             }
-                            AudioController.instance.maquina.Play();
                         }
                         if(taskName=="varal"){
                             Varal.instance.secarRoupa.text =Contador2.FormatarTempo((int)countTime);
