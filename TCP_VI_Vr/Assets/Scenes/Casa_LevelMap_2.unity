@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -938,11 +938,12 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 948869540}
         m_TargetAssemblyTypeName: AudioController, Assembly-CSharp
-        m_MethodName: botaoSound
-        m_Mode: 1
+        m_MethodName: efeitoInterface
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 8300000, guid: a82497c13b1131e4eb5abb917d3cc538,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2273,11 +2274,12 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 948869540}
         m_TargetAssemblyTypeName: AudioController, Assembly-CSharp
-        m_MethodName: botaoSound
-        m_Mode: 1
+        m_MethodName: efeitoInterface
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 8300000, guid: 79d3b24582adbdb4691c1886694c33a4,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2728,11 +2730,12 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 948869540}
         m_TargetAssemblyTypeName: AudioController, Assembly-CSharp
-        m_MethodName: botaoSound
-        m_Mode: 1
+        m_MethodName: efeitoInterface
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 8300000, guid: a82497c13b1131e4eb5abb917d3cc538,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -16223,11 +16226,12 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 948869540}
         m_TargetAssemblyTypeName: AudioController, Assembly-CSharp
-        m_MethodName: botaoSound
-        m_Mode: 1
+        m_MethodName: efeitoInterface
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 8300000, guid: a82497c13b1131e4eb5abb917d3cc538,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -16393,11 +16397,12 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 948869540}
         m_TargetAssemblyTypeName: AudioController, Assembly-CSharp
-        m_MethodName: botaoSound
-        m_Mode: 1
+        m_MethodName: efeitoInterface
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 8300000, guid: a82497c13b1131e4eb5abb917d3cc538,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -20113,6 +20118,7 @@ GameObject:
   - component: {fileID: 948869539}
   - component: {fileID: 948869538}
   - component: {fileID: 948869537}
+  - component: {fileID: 948869541}
   m_Layer: 5
   m_Name: uiManager2
   m_TagString: Untagged
@@ -20328,7 +20334,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 47fb2da8cf8d8d04b827243a47a28b97, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 6b3dafce3e0476540a6bcb4f5e10c2c2, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -20440,7 +20446,107 @@ MonoBehaviour:
   vol2: {fileID: 1482560796}
   msc: {fileID: 948869538}
   efx: {fileID: 948869537}
-  btnCllick: {fileID: 8300000, guid: d2015a7281533094da83b87b3710dc8e, type: 3}
+  efxCena: {fileID: 948869541}
+  btnCllick: {fileID: 8300000, guid: ee21ad867c0cc764c932d1c923a1de07, type: 3}
+  audiosClips:
+  - {fileID: 8300000, guid: 7c28e486c9a373f4ea952ca44d0918fb, type: 3}
+  - {fileID: 8300000, guid: 9251d4a3b5b68fb4b95d5fddc993b225, type: 3}
+--- !u!82 &948869541
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948869531}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &949507831
 GameObject:
   m_ObjectHideFlags: 0
@@ -20563,11 +20669,12 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 948869540}
         m_TargetAssemblyTypeName: AudioController, Assembly-CSharp
-        m_MethodName: botaoSound
-        m_Mode: 1
+        m_MethodName: efeitoInterface
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 8300000, guid: a82497c13b1131e4eb5abb917d3cc538,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -28281,11 +28388,12 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 948869540}
         m_TargetAssemblyTypeName: AudioController, Assembly-CSharp
-        m_MethodName: botaoSound
-        m_Mode: 1
+        m_MethodName: efeitoInterface
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 8300000, guid: 79d3b24582adbdb4691c1886694c33a4,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

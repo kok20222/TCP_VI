@@ -85,6 +85,7 @@ public class HandPresence : MonoBehaviour
         if(primaryButtonValue && id==1 && aberto == false){
 
                 UIController.instance.PauseGame();
+                AudioController.instance.efeitoInterface(AudioController.instance.audiosClips[0]);
                  
         }
 
@@ -95,6 +96,7 @@ if( id==0 &&aberto2==false){
             if(primaryButtonValue2 ){
                 
                     UIController.instance.panelTrue(UIController.instance.canvasHand);
+                    AudioController.instance.efeitoInterface(AudioController.instance.audiosClips[1]);
                     aberto2=true;
                 
                 
@@ -107,6 +109,7 @@ if( id==0 &&aberto2==false){
             if(primaryButtonValue3 ){
                 
                     UIController.instance.panelFalse(UIController.instance.canvasHand);
+                    AudioController.instance.efeitoInterface(AudioController.instance.audiosClips[1]);
                     aberto2=false;
                 
                 
