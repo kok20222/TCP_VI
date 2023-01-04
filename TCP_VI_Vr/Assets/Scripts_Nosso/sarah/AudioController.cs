@@ -13,6 +13,7 @@ public class AudioController : MonoBehaviour
      public AudioSource geladeira;
     public AudioSource efx;
     public AudioSource efxCena;
+    public AudioSource acabandoTempo;
     public AudioClip btnCllick;
     public AudioClip[] audiosClips;
     void Start()
@@ -22,6 +23,13 @@ public class AudioController : MonoBehaviour
         volumeSom2.value=0.5f;
         volumeEffect.value=0.5f;
         vol2.value=0.5f;
+         msc.volume = volumeSom2.value/2;
+            som1.volume = volumeSom2.value*4;
+            som2.volume = volumeSom2.value*4;
+            maquina.volume = vol2.value*3;
+            geladeira.volume = vol2.value*2;
+            efxCena.volume = vol2.value*2;
+            acabandoTempo.volume = vol2.value*2;
     }
 
     // Update is called once per frame
@@ -35,23 +43,24 @@ public class AudioController : MonoBehaviour
     }
         public void ListenerMethod(float v)
         {
-            msc.volume = volumeSom2.value*2;
-            som1.volume = volumeSom2.value*2;
-            som2.volume = volumeSom2.value*2;
+            msc.volume = volumeSom2.value/2;
+            som1.volume = volumeSom2.value*4;
+            som2.volume = volumeSom2.value*4;
             volumeSom.value =volumeSom2.value;
         }
         public void ListenerMethod2(float v)
         {
-            msc.volume = volumeSom.value*2;
-            som1.volume = volumeSom.value*2;
-            som2.volume = volumeSom.value*2;
+            msc.volume = volumeSom.value/2;
+            som1.volume = volumeSom.value*4;
+            som2.volume = volumeSom.value*4;
             volumeSom2.value =volumeSom.value;
         }
         public void ListenerMethod3(float v)
         {
            efx.volume = vol2.value*2;
            efxCena.volume = vol2.value*2;
-           maquina.volume = vol2.value*2;
+           acabandoTempo.volume = vol2.value*2;
+           maquina.volume = vol2.value*3;
            geladeira.volume = vol2.value*2;
            volumeEffect.value = vol2.value;
         }
@@ -59,7 +68,8 @@ public class AudioController : MonoBehaviour
         {
            efx.volume = volumeEffect.value*2;
            efxCena.volume = volumeEffect.value*2;
-           maquina.volume = volumeEffect.value*2;
+           acabandoTempo.volume = volumeEffect.value*2;
+           maquina.volume = volumeEffect.value*3;
            geladeira.volume = volumeEffect.value*2;
            vol2.value = volumeEffect.value;
         }

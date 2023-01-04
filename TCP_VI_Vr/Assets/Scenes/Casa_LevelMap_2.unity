@@ -5505,7 +5505,7 @@ PrefabInstance:
     - target: {fileID: 6258225421178589134, guid: ba9cf485aaeb96040945f8c2ed9b3d0f,
         type: 3}
       propertyPath: witchTask
-      value: comidaCortar
+      value: comidaCozinhar
       objectReference: {fileID: 0}
     - target: {fileID: 8648657637280263758, guid: ba9cf485aaeb96040945f8c2ed9b3d0f,
         type: 3}
@@ -8253,7 +8253,7 @@ PrefabInstance:
     - target: {fileID: 6258225421178589134, guid: ba9cf485aaeb96040945f8c2ed9b3d0f,
         type: 3}
       propertyPath: witchTask
-      value: comidaCozinhar
+      value: comidaCortar
       objectReference: {fileID: 0}
     - target: {fileID: 8648657637280263758, guid: ba9cf485aaeb96040945f8c2ed9b3d0f,
         type: 3}
@@ -8278,17 +8278,17 @@ PrefabInstance:
     - target: {fileID: 8648657637280263758, guid: ba9cf485aaeb96040945f8c2ed9b3d0f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.307
+      value: -0.518
       objectReference: {fileID: 0}
     - target: {fileID: 8648657637280263758, guid: ba9cf485aaeb96040945f8c2ed9b3d0f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.914
+      value: 0.739
       objectReference: {fileID: 0}
     - target: {fileID: 8648657637280263758, guid: ba9cf485aaeb96040945f8c2ed9b3d0f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.939
+      value: 1.724
       objectReference: {fileID: 0}
     - target: {fileID: 8648657637280263758, guid: ba9cf485aaeb96040945f8c2ed9b3d0f,
         type: 3}
@@ -9126,7 +9126,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 1d34375940fcd3544b23bde2d3964ac1, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
@@ -11993,7 +11993,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 1d34375940fcd3544b23bde2d3964ac1, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
@@ -14108,7 +14108,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.15
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &675410723
 MonoBehaviour:
@@ -14378,17 +14378,17 @@ PrefabInstance:
     - target: {fileID: 8648657637280263758, guid: ba9cf485aaeb96040945f8c2ed9b3d0f,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.40122437
+      value: 0.33029595
       objectReference: {fileID: 0}
     - target: {fileID: 8648657637280263758, guid: ba9cf485aaeb96040945f8c2ed9b3d0f,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.40122437
+      value: 0.33029595
       objectReference: {fileID: 0}
     - target: {fileID: 8648657637280263758, guid: ba9cf485aaeb96040945f8c2ed9b3d0f,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.40122437
+      value: 0.33029595
       objectReference: {fileID: 0}
     - target: {fileID: 8648657637280263758, guid: ba9cf485aaeb96040945f8c2ed9b3d0f,
         type: 3}
@@ -20431,6 +20431,7 @@ GameObject:
   - component: {fileID: 948869538}
   - component: {fileID: 948869537}
   - component: {fileID: 948869541}
+  - component: {fileID: 948869542}
   m_Layer: 5
   m_Name: uiManager2
   m_TagString: Untagged
@@ -20755,6 +20756,7 @@ MonoBehaviour:
   geladeira: {fileID: 8773090174321870465}
   efx: {fileID: 948869537}
   efxCena: {fileID: 948869541}
+  acabandoTempo: {fileID: 948869542}
   btnCllick: {fileID: 8300000, guid: ee21ad867c0cc764c932d1c923a1de07, type: 3}
   audiosClips:
   - {fileID: 8300000, guid: 7c28e486c9a373f4ea952ca44d0918fb, type: 3}
@@ -20776,6 +20778,102 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &948869542
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948869531}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 7a6d91d3de0bdd949b9c61b3f3618596, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -32235,6 +32333,19 @@ MonoBehaviour:
             m_StringArgument: maquina
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 948869540}
+          m_TargetAssemblyTypeName: AudioController, Assembly-CSharp
+          m_MethodName: efeitoInterface
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 8300000, guid: dca40b5b25a300046ab813154de62c59,
+              type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - id: {fileID: 11400000, guid: ba027281e402c7a4f81f669f08b60477, type: 2}
     FeedbackEvent:
       m_PersistentCalls:
@@ -32290,6 +32401,19 @@ MonoBehaviour:
             m_StringArgument: maquina
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 948869540}
+          m_TargetAssemblyTypeName: AudioController, Assembly-CSharp
+          m_MethodName: efeitoInterface
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 8300000, guid: dca40b5b25a300046ab813154de62c59,
+              type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - id: {fileID: 11400000, guid: 2aba6e2050bc44845a14c97e6ecc8b06, type: 2}
     FeedbackEvent:
       m_PersistentCalls:
@@ -32330,6 +32454,18 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: maquina
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 948869540}
+          m_TargetAssemblyTypeName: AudioController, Assembly-CSharp
+          m_MethodName: efeitoInterface
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
   - id: {fileID: 11400000, guid: ab81fcfee9caa2447b164425934c6c87, type: 2}
@@ -32374,6 +32510,19 @@ MonoBehaviour:
             m_StringArgument: maquina
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 948869540}
+          m_TargetAssemblyTypeName: AudioController, Assembly-CSharp
+          m_MethodName: efeitoInterface
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 8300000, guid: dca40b5b25a300046ab813154de62c59,
+              type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - id: {fileID: 11400000, guid: fa0add36e372f0e488b2b8de615390d4, type: 2}
     FeedbackEvent:
       m_PersistentCalls:
@@ -32401,6 +32550,19 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: maquina
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 948869540}
+          m_TargetAssemblyTypeName: AudioController, Assembly-CSharp
+          m_MethodName: efeitosound
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 8300000, guid: dca40b5b25a300046ab813154de62c59,
+              type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
   - id: {fileID: 11400000, guid: f6e35f22a415d804d8c65e411d905901, type: 2}
@@ -32432,6 +32594,19 @@ MonoBehaviour:
             m_StringArgument: maquina
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 948869540}
+          m_TargetAssemblyTypeName: AudioController, Assembly-CSharp
+          m_MethodName: efeitoInterface
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 8300000, guid: dca40b5b25a300046ab813154de62c59,
+              type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - id: {fileID: 11400000, guid: ff7a2c06f9f09f24797349edc48bc67a, type: 2}
     FeedbackEvent:
       m_PersistentCalls:
@@ -32461,6 +32636,19 @@ MonoBehaviour:
             m_StringArgument: maquina
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 948869540}
+          m_TargetAssemblyTypeName: AudioController, Assembly-CSharp
+          m_MethodName: efeitoInterface
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 8300000, guid: dca40b5b25a300046ab813154de62c59,
+              type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - id: {fileID: 11400000, guid: e193954e7d5e71946ba51baad3b0eafa, type: 2}
     FeedbackEvent:
       m_PersistentCalls:
@@ -32488,6 +32676,19 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: maquina
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 948869540}
+          m_TargetAssemblyTypeName: AudioController, Assembly-CSharp
+          m_MethodName: efeitosound
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 8300000, guid: dca40b5b25a300046ab813154de62c59,
+              type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
   - id: {fileID: 11400000, guid: 7cb48e8153f918b47971b22c10d875c2, type: 2}
@@ -45138,7 +45339,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.15
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2125078055
 MonoBehaviour:

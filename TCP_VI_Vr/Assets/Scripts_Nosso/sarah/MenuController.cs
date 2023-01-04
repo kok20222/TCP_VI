@@ -111,14 +111,15 @@ public class MenuController : MonoBehaviour
             TextTime1.text = "Tempo:  " + Contador1.FormatarTempo((int)Contador1.tempoTotal);
              TextTimeHand.text = "Tempo:  " + Contador1.FormatarTempo((int)Contador1.tempoTotal);
             
-             if(Contador1.tempoTotal<=10f && Contador1.tempoTotal>9f){
-                AudioController.instance.efeitosound(AudioController.instance.audiosClips[2]);
+             if(Contador1.tempoTotal<10f && Contador1.tempoTotal>=9.8f ){
+                AudioController.instance.acabandoTempo.Play();
              }
 
              if(vitoryCond<2 && Contador1.tempoTotal<0){
                 panelTrue(derrotaUI);
                  Time.timeScale = 0;
                  AudioController.instance.efxCena.Stop();
+                 AudioController.instance.acabandoTempo.Stop();
                  AudioController.instance.efeitoInterface(AudioController.instance.audiosClips[3]);
              }
             
