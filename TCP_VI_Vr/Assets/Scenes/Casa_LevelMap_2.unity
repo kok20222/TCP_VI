@@ -8875,6 +8875,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 2147483647
   additionalHeight: 0.2
+  auxAndar: 0
 --- !u!114 &417089883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20849,6 +20850,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 6a792d609d138794ba4b5dd8bd77c5c4, type: 3}
   - {fileID: 8300000, guid: 8ecff147669392f4ab3aca153df2e689, type: 3}
   - {fileID: 8300000, guid: 532f6ffa7738f844582ab0aae3001c5d, type: 3}
+  - {fileID: 8300000, guid: 010a4e468f90231489643d07a7b6e714, type: 3}
 --- !u!82 &948869541
 AudioSource:
   m_ObjectHideFlags: 0

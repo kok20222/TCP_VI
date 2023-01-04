@@ -12,7 +12,7 @@ public class ContinuosMovement : MonoBehaviour
     public float gravity = -9.81f;
     public LayerMask groundLayer;
     public float additionalHeight = 0.2f;
-
+    public bool auxAndar=false;
     private float fallingSpeed;
 
     private XROrigin rig;
@@ -32,6 +32,20 @@ public class ContinuosMovement : MonoBehaviour
 
         InputDevice device = InputDevices.GetDeviceAtXRNode(inputSource);
         device.TryGetFeatureValue(CommonUsages.primary2DAxis, out inputAxis);
+        //if(inputAxis!=)
+        Vector3 aux=new Vector3(inputAxis.x, 0, inputAxis.y);
+        if(aux.x!=0||aux.y!=0||aux.z!=0){
+            //chamar passos aqui
+            if(auxAndar==false){
+                 AudioController.instance.efeitosound(AudioController.instance.audiosClips[7]);
+                 auxAndar=true;
+            }
+           
+
+        }else{
+            AudioController.instance.efxCena.Stop();
+            auxAndar=false;
+        }
         
     }
 
