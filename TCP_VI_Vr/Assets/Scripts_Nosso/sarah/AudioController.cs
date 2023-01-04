@@ -8,7 +8,7 @@ public class AudioController : MonoBehaviour
     public static AudioController instance;
     public Slider volumeSom, volumeSom2; 
     public Slider volumeEffect, vol2;
-    public AudioSource msc;
+    public AudioSource msc, som1, som2;
      public AudioSource maquina;
      public AudioSource geladeira;
     public AudioSource efx;
@@ -36,11 +36,15 @@ public class AudioController : MonoBehaviour
         public void ListenerMethod(float v)
         {
             msc.volume = volumeSom2.value*2;
+            som1.volume = volumeSom2.value*2;
+            som2.volume = volumeSom2.value*2;
             volumeSom.value =volumeSom2.value;
         }
         public void ListenerMethod2(float v)
         {
             msc.volume = volumeSom.value*2;
+            som1.volume = volumeSom.value*2;
+            som2.volume = volumeSom.value*2;
             volumeSom2.value =volumeSom.value;
         }
         public void ListenerMethod3(float v)
