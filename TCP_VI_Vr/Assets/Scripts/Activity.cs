@@ -91,6 +91,16 @@ namespace ActivitSystem
                         if(taskName=="comidaLavar"||taskName=="comidaCortar"||taskName=="comidaCozinhar"){
                             Fogao.instance.comidaText.text =Contador3.FormatarTempo((int)countTime);
                         }
+                        if(taskName=="comidaLavar"){
+                                areasCozinhaControl.instance.control();
+                             }
+                             if(taskName=="comidaCortar"){
+                                areasCozinhaControl.instance.control2();
+                             }
+                             if(taskName=="comidaCozinhar"){
+                                areasCozinhaControl.instance.control3();
+                             }
+                        
                         if (countTime < 0)
                         {
                             currente = ActivityState.done;
@@ -99,9 +109,16 @@ namespace ActivitSystem
                                 AudioController.instance.maquina.Stop();
                              }
                              if(taskName=="varal")Varal.instance.roupas=2;
-                             if(taskName=="comidaLavar")Fogao.instance.comida=2;
-                             if(taskName=="comidaCortar")Fogao.instance.comida=3;
-                             if(taskName=="comidaCozinhar")Fogao.instance.comida=4;
+                             
+                             if(taskName=="comidaLavar"){
+                                Fogao.instance.comida=2;
+                             }
+                             if(taskName=="comidaCortar"){
+                                Fogao.instance.comida=3;
+                             }
+                             if(taskName=="comidaCozinhar"){
+                                Fogao.instance.comida=4;
+                             }
                             MakeThis();
                         }else{
                              if(taskName=="maquina")Maquina.instance.roupas=1;

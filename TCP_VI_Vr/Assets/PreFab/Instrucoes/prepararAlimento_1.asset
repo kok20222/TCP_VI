@@ -27,7 +27,6 @@ MonoBehaviour:
       element: {fileID: 5220887850340931838, guid: 5bbf7a3b208c41d448f1d132a3ad146c,
         type: 3}
     - target: 1
-      element: {fileID: 9144008690866380473, guid: 40909021641f6774681221b069b00d50,
+      element: {fileID: 7505378114445952015, guid: 7982a722093a6794f9269a5135791a8e,
         type: 3}
-    bonus:
-    - {fileID: 7505378114445952015, guid: 7982a722093a6794f9269a5135791a8e, type: 3}
+    bonus: []

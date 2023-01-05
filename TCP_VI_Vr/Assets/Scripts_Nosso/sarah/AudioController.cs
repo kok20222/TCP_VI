@@ -27,7 +27,7 @@ public class AudioController : MonoBehaviour
             som1.volume = volumeSom2.value*4;
             som2.volume = volumeSom2.value*4;
             maquina.volume = vol2.value*3;
-            geladeira.volume = vol2.value*2;
+            geladeira.volume = vol2.value;
             efxCena.volume = vol2.value*2;
             acabandoTempo.volume = vol2.value*2;
     }
@@ -61,7 +61,7 @@ public class AudioController : MonoBehaviour
            efxCena.volume = vol2.value*2;
            acabandoTempo.volume = vol2.value*2;
            maquina.volume = vol2.value*3;
-           geladeira.volume = vol2.value*2;
+           geladeira.volume = vol2.value;
            volumeEffect.value = vol2.value;
         }
         public void ListenerMethod4(float v)
@@ -70,7 +70,7 @@ public class AudioController : MonoBehaviour
            efxCena.volume = volumeEffect.value*2;
            acabandoTempo.volume = volumeEffect.value*2;
            maquina.volume = volumeEffect.value*3;
-           geladeira.volume = volumeEffect.value*2;
+           geladeira.volume = volumeEffect.value;
            vol2.value = volumeEffect.value;
         }
     
