@@ -33712,7 +33712,6 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 20f03d8cf316bb74fbe0b488f7f4bdab, type: 2}
     - {fileID: 11400000, guid: 6a23b77b98ae6ed40be1037fea2333db, type: 2}
     - {fileID: 11400000, guid: c73228e8d9f1b1e4cbc77614eda6ceea, type: 2}
-    - {fileID: 11400000, guid: eb5151414b48fc749aaddf1ebb89d93f, type: 2}
     - {fileID: 11400000, guid: 7cb48e8153f918b47971b22c10d875c2, type: 2}
   eventFeedback:
     m_PersistentCalls:
@@ -63826,6 +63825,11 @@ PrefabInstance:
       propertyPath: states.Array.data[0]
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 7505378114445952010, guid: 7982a722093a6794f9269a5135791a8e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7505378114445952012, guid: 7982a722093a6794f9269a5135791a8e,
         type: 3}
       propertyPath: m_RootOrder
@@ -63909,7 +63913,7 @@ PrefabInstance:
     - target: {fileID: 7505378114445952015, guid: 7982a722093a6794f9269a5135791a8e,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3147316770809771874, guid: 7982a722093a6794f9269a5135791a8e, type: 3}

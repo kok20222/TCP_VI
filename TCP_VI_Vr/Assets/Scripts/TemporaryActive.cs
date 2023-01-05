@@ -9,6 +9,7 @@ public class TemporaryActive : MonoBehaviour
     
     public Activity target;
     public string witchTask;
+    private int iVaral=0;
 
     
     private void OnTriggerEnter(Collider other)
@@ -19,8 +20,17 @@ public class TemporaryActive : MonoBehaviour
         {
             
             Debug.Log("hand check");
-            target.GetComponent<Activity>().Check(witchTask);
-            target.GetComponent<Activity>().auxMaquina=false;
+            if(witchTask=="varal"){
+                if(iVaral==0){
+                    target.GetComponent<Activity>().Check(witchTask);
+                    iVaral=1;
+                }
+
+            }else{
+                target.GetComponent<Activity>().Check(witchTask);
+                target.GetComponent<Activity>().auxMaquina=false;
+            }
+            
         }
     }
   
