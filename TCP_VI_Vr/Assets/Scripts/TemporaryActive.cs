@@ -25,12 +25,22 @@ public class TemporaryActive : MonoBehaviour
                     target.GetComponent<Activity>().Check(witchTask);
                     iVaral=1;
                 }
+            }
+            if(witchTask=="maquina"){
+                
+                if(PortaMaquina.instance.fechado==true){
+                    Debug.Log("mexeu");
+                    target.GetComponent<Activity>().Check(witchTask);
+                    target.GetComponent<Activity>().auxMaquina=false;
+                   PortaMaquina.instance.fechado=false;
+                }
 
             }else{
                 target.GetComponent<Activity>().Check(witchTask);
-                target.GetComponent<Activity>().auxMaquina=false;
+                
             }
             
+        
         }
     }
   
