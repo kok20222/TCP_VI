@@ -42,7 +42,7 @@ public class MenuController : MonoBehaviour
         comida.value=1f;
     }
     public void higieneEstatistica(){
-        higiene.value-=0.25f;
+        higiene.value-=0.5f;
     }
     public void atualizarSliders(int i){
         if(i==0){

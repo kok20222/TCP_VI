@@ -34355,6 +34355,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 948869536}
+          m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+          m_MethodName: higieneEstatistica
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - id: {fileID: 11400000, guid: ba027281e402c7a4f81f669f08b60477, type: 2}
     FeedbackEvent:
       m_PersistentCalls:
@@ -34418,6 +34430,18 @@ MonoBehaviour:
             m_ObjectArgument: {fileID: 8300000, guid: dca40b5b25a300046ab813154de62c59,
               type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 948869536}
+          m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+          m_MethodName: higieneEstatistica
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
