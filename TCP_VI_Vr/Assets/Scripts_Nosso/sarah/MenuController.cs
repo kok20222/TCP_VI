@@ -26,6 +26,7 @@ public class MenuController : MonoBehaviour
     public TMP_Text TextTime1;
     public int vitoryCond=0;
     bool auxiliar = false;
+    public bool auxEsta=false;
     int i,j;
 
     // Start is called before the first frame update
@@ -42,7 +43,11 @@ public class MenuController : MonoBehaviour
         comida.value=1f;
     }
     public void higieneEstatistica(){
-        higiene.value-=0.5f;
+        if(auxEsta==false){
+            higiene.value=0.5f;
+            auxEsta=true;
+        }
+        
     }
     public void atualizarSliders(int i){
         if(i==0){

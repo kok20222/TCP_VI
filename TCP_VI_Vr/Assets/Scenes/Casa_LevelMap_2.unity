@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -27517,6 +27517,7 @@ MonoBehaviour:
   hText: {fileID: 1980027134}
   TextTime1: {fileID: 1616500457}
   vitoryCond: 0
+  auxEsta: 0
 --- !u!82 &948869537
 AudioSource:
   m_ObjectHideFlags: 0
@@ -40412,7 +40413,8 @@ MonoBehaviour:
           m_MethodName: efeitoInterface
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgument: {fileID: 8300000, guid: dca40b5b25a300046ab813154de62c59,
+              type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
@@ -40645,7 +40647,114 @@ MonoBehaviour:
   - id: {fileID: 11400000, guid: 7cb48e8153f918b47971b22c10d875c2, type: 2}
     FeedbackEvent:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 948869536}
+          m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+          m_MethodName: tasksCompletadas
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: maquina
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 948869540}
+          m_TargetAssemblyTypeName: AudioController, Assembly-CSharp
+          m_MethodName: efeitosound
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 8300000, guid: dca40b5b25a300046ab813154de62c59,
+              type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - id: {fileID: 11400000, guid: 80a191ce080ac04418151efefb6cab0a, type: 2}
+    FeedbackEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 948869536}
+          m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+          m_MethodName: tasksCompletadas
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: maquina
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 948869540}
+          m_TargetAssemblyTypeName: AudioController, Assembly-CSharp
+          m_MethodName: efeitosound
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 8300000, guid: dca40b5b25a300046ab813154de62c59,
+              type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 948869536}
+          m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+          m_MethodName: higieneEstatistica
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - id: {fileID: 11400000, guid: e797ab2848fb40e47ac09bc201a9f1ff, type: 2}
+    FeedbackEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 948869536}
+          m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+          m_MethodName: tasksCompletadas
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: maquina
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 948869540}
+          m_TargetAssemblyTypeName: AudioController, Assembly-CSharp
+          m_MethodName: efeitosound
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 8300000, guid: dca40b5b25a300046ab813154de62c59,
+              type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 948869536}
+          m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+          m_MethodName: higieneEstatistica
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   eventInterrupt:
     m_PersistentCalls:
       m_Calls: []

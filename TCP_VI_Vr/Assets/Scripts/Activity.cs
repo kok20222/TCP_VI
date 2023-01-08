@@ -80,6 +80,7 @@ namespace ActivitSystem
                             Maquina.instance.SETAS[0].SetActive(false);
                             Maquina.instance.SETAS[1].SetActive(false);
                             
+                            
                             if(auxMaquina==false){
                                 AudioController.instance.efeitoInterface(AudioController.instance.audiosClips[4]);
                                 AudioController.instance.maquina.Play();
@@ -118,6 +119,7 @@ namespace ActivitSystem
                         {
                             currente = ActivityState.done;
                              if(taskName=="maquina"){
+                                MenuController.instance.auxEsta=false;
                                 Maquina.instance.roupas=2;
                                 AudioController.instance.maquina.Stop();
                              }

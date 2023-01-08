@@ -33,6 +33,7 @@ public class TemporaryActive : MonoBehaviour
                     target.GetComponent<Activity>().Check(witchTask);
                     target.GetComponent<Activity>().auxMaquina=false;
                    PortaMaquina.instance.fechado=false;
+                   
                 }
 
             }

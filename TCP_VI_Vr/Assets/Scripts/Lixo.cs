@@ -48,7 +48,7 @@ public class Lixo : MonoBehaviour
     }
     void OnTriggerEnter(Collider other){
 
-            if(other.gameObject.layer == 8){ 
+            if(other.tag == "lixo"){ 
 
 
                  lixos ++;
@@ -64,7 +64,7 @@ public class Lixo : MonoBehaviour
 
         void OnTriggerExit(Collider other){
 
-             if(other.gameObject.layer == 8){
+             if(other.tag == "lixo"){
 
 
                  lixos --;

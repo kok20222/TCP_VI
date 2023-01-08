@@ -67,7 +67,7 @@ public class AudioController : MonoBehaviour
            comida1.volume = vol2.value*2;
             comida2.volume = vol2.value*2;
             comida3.volume = vol2.value*2;
-           geladeira.volume = vol2.value;
+           geladeira.volume = vol2.value/2;
            volumeEffect.value = vol2.value;
         }
         public void ListenerMethod4(float v)
@@ -79,7 +79,7 @@ public class AudioController : MonoBehaviour
            comida1.volume = volumeEffect.value*2;
             comida2.volume = volumeEffect.value*2;
             comida3.volume = volumeEffect.value*2;
-           geladeira.volume = volumeEffect.value;
+           geladeira.volume = volumeEffect.value/2;
            vol2.value = volumeEffect.value;
         }
     
