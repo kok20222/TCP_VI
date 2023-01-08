@@ -48,6 +48,7 @@ namespace ActivitSystem
         private string instruction;
         private string taskName;
         public bool auxMaquina=false;
+        public bool auxFogao=false;
         contagemRegressiva Contador1 = new contagemRegressiva();
         contagemRegressiva Contador2 = new contagemRegressiva();
         contagemRegressiva Contador3 = new contagemRegressiva();
@@ -93,12 +94,24 @@ namespace ActivitSystem
                         }
                         if(taskName=="comidaLavar"){
                                 areasCozinhaControl.instance.control();
+                                if(auxFogao==false){
+                                AudioController.instance.comida1.Play();
+                                auxFogao=true;
+                                }
                              }
                              if(taskName=="comidaCortar"){
                                 areasCozinhaControl.instance.control2();
+                                if(auxFogao==false){
+                                AudioController.instance.comida2.Play();
+                                auxFogao=true;
+                                }
                              }
                              if(taskName=="comidaCozinhar"){
                                 areasCozinhaControl.instance.control3();
+                                if(auxFogao==false){
+                                AudioController.instance.comida3.Play();
+                                auxFogao=true;
+                                }
                              }
                         
                         if (countTime < 0)
@@ -112,12 +125,15 @@ namespace ActivitSystem
                              
                              if(taskName=="comidaLavar"){
                                 Fogao.instance.comida=2;
+                                AudioController.instance.comida1.Stop();
                              }
                              if(taskName=="comidaCortar"){
                                 Fogao.instance.comida=3;
+                                AudioController.instance.comida2.Stop();
                              }
                              if(taskName=="comidaCozinhar"){
                                 Fogao.instance.comida=4;
+                                AudioController.instance.comida3.Stop();
                              }
                             MakeThis();
                         }else{

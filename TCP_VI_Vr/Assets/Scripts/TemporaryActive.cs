@@ -35,6 +35,19 @@ public class TemporaryActive : MonoBehaviour
                    PortaMaquina.instance.fechado=false;
                 }
 
+            }
+            if(witchTask=="comidaLavar"){
+                target.GetComponent<Activity>().auxFogao=false;
+                target.GetComponent<Activity>().Check(witchTask);
+                }
+                if(witchTask=="comidaCortar"){
+                target.GetComponent<Activity>().auxFogao=false;
+                target.GetComponent<Activity>().Check(witchTask);
+                }
+                if(witchTask=="comidaCozinhar"){
+                target.GetComponent<Activity>().auxFogao=false;
+                target.GetComponent<Activity>().Check(witchTask);
+                }
             }else{
                 target.GetComponent<Activity>().Check(witchTask);
                 
@@ -45,4 +58,4 @@ public class TemporaryActive : MonoBehaviour
     }
   
     
-}
+

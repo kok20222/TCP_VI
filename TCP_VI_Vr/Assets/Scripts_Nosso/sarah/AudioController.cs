@@ -9,7 +9,7 @@ public class AudioController : MonoBehaviour
     public Slider volumeSom, volumeSom2; 
     public Slider volumeEffect, vol2;
     public AudioSource msc, som1, som2;
-     public AudioSource maquina;
+     public AudioSource maquina, comida1,comida2,comida3;
      public AudioSource geladeira;
     public AudioSource efx;
     public AudioSource efxCena;
@@ -27,6 +27,9 @@ public class AudioController : MonoBehaviour
             som1.volume = volumeSom2.value*4;
             som2.volume = volumeSom2.value*4;
             maquina.volume = vol2.value*3;
+            comida1.volume = vol2.value*2;
+            comida2.volume = vol2.value*2;
+            comida3.volume = vol2.value*2;
             geladeira.volume = vol2.value;
             efxCena.volume = vol2.value*2;
             acabandoTempo.volume = vol2.value*2;
@@ -61,6 +64,9 @@ public class AudioController : MonoBehaviour
            efxCena.volume = vol2.value*2;
            acabandoTempo.volume = vol2.value*2;
            maquina.volume = vol2.value*3;
+           comida1.volume = vol2.value*2;
+            comida2.volume = vol2.value*2;
+            comida3.volume = vol2.value*2;
            geladeira.volume = vol2.value;
            volumeEffect.value = vol2.value;
         }
@@ -70,6 +76,9 @@ public class AudioController : MonoBehaviour
            efxCena.volume = volumeEffect.value*2;
            acabandoTempo.volume = volumeEffect.value*2;
            maquina.volume = volumeEffect.value*3;
+           comida1.volume = volumeEffect.value*2;
+            comida2.volume = volumeEffect.value*2;
+            comida3.volume = volumeEffect.value*2;
            geladeira.volume = volumeEffect.value;
            vol2.value = volumeEffect.value;
         }
