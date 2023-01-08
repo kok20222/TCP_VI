@@ -31,12 +31,18 @@ public class MenuController : MonoBehaviour
     // Start is called before the first frame update
     void Start() {
         instance = this;
-        mental.value=0.5f;
+        mental.value=0.75f;
         
         comida.value=0.5f;
         
-        higiene.value=0.5f;
+        higiene.value=1f;
         
+    }
+    public void comidaEstatistica(){
+        comida.value=1f;
+    }
+    public void higieneEstatistica(){
+        higiene.value-=0.25f;
     }
     public void atualizarSliders(int i){
         if(i==0){

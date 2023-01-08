@@ -11702,6 +11702,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 948869536}
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+        m_MethodName: comidaEstatistica
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   indetifiedFeedback: []
   eventInterrupt:
     m_PersistentCalls:
@@ -14978,8 +14990,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 643a563aaefe53a48a6f17efd8652663, type: 2}
-  m_sharedMaterial: {fileID: 7028981202292096505, guid: 643a563aaefe53a48a6f17efd8652663,
+  m_fontAsset: {fileID: 11400000, guid: 2741c7acf457e664ead325f3debb07c7, type: 2}
+  m_sharedMaterial: {fileID: 6257536137976027355, guid: 2741c7acf457e664ead325f3debb07c7,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -18848,7 +18860,7 @@ GameObject:
   - component: {fileID: 786398372}
   m_Layer: 6
   m_Name: Papel_Amassado (3)
-  m_TagString: Untagged
+  m_TagString: lixo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21013,7 +21025,7 @@ PrefabInstance:
     - target: {fileID: 2119799283600384060, guid: 5ce29e87bf011b84f9ba93e091bc19e8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.952
+      value: 1.03
       objectReference: {fileID: 0}
     - target: {fileID: 2119799283600384060, guid: 5ce29e87bf011b84f9ba93e091bc19e8,
         type: 3}
@@ -21668,7 +21680,7 @@ GameObject:
   - component: {fileID: 944519462}
   m_Layer: 6
   m_Name: Papel_Amassado (1)
-  m_TagString: Untagged
+  m_TagString: lixo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28586,7 +28598,7 @@ GameObject:
   - component: {fileID: 1248429149}
   m_Layer: 6
   m_Name: Papel_Amassado (4)
-  m_TagString: Untagged
+  m_TagString: lixo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39109,7 +39121,7 @@ GameObject:
   - component: {fileID: 1712250593}
   m_Layer: 6
   m_Name: Papel_Amassado (2)
-  m_TagString: Untagged
+  m_TagString: lixo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

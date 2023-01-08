@@ -23,30 +23,32 @@ public class Lixo : MonoBehaviour
     void Update()
     {
 
-        lixotexto1.text =  lixos + "/5";
+        lixotexto1.text =  lixos + "/4";
     if(lixos==5){
-        MenuController.instance.panelTrue(MenuController.instance.checks[0]);
-        MenuController.instance.panelTrue(MenuController.instance.checks[2]);
-        if(aux==false){
-                MenuController.instance.vitoryCond++;
-                aux=true;
+        MenuController.instance.mental.value=1f;
+        //MenuController.instance.panelTrue(MenuController.instance.checks[0]);
+        //
+        //MenuController.instance.panelTrue(MenuController.instance.checks[2]);
+        //if(aux==false){
+               // MenuController.instance.vitoryCond++;
+               // aux=true;
             }
-    }else{
-        MenuController.instance.panelFalse(MenuController.instance.checks[0]);
-        MenuController.instance.panelFalse(MenuController.instance.checks[2]);
-        if(aux2==false && aux==true){
-                MenuController.instance.vitoryCond--;
-                aux2=true;
-                aux = false;
-            }
-    }
+    //}else{
+        //MenuController.instance.panelFalse(MenuController.instance.checks[0]);
+       // MenuController.instance.panelFalse(MenuController.instance.checks[2]);
+        //if(aux2==false && aux==true){
+            //    MenuController.instance.vitoryCond--;
+               // aux2=true;
+               // aux = false;
+          //  }
+   // }
 
         
         
     }
     void OnTriggerEnter(Collider other){
 
-            if(other.tag == "lixo"){ 
+            if(other.gameObject.layer == 8){ 
 
 
                  lixos ++;
@@ -62,7 +64,7 @@ public class Lixo : MonoBehaviour
 
         void OnTriggerExit(Collider other){
 
-            if(other.tag == "lixo"){
+             if(other.gameObject.layer == 8){
 
 
                  lixos --;
