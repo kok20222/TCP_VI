@@ -98,18 +98,21 @@ namespace ActivitSystem
                                 
                                 if(auxFogao==false){
                                 AudioController.instance.comida1.Play();
+                                areasCozinhaControl.instance.control3();
                                 auxFogao=true;
                                 }
                              }
                              if(taskName=="comidaCortar"){
                                 if(auxFogao==false){
                                 AudioController.instance.comida2.Play();
+                                areasCozinhaControl.instance.control3();
                                 auxFogao=true;
                                 }
                              }
                              if(taskName=="comidaCozinhar"){
                                 if(auxFogao==false){
                                 AudioController.instance.comida3.Play();
+                                areasCozinhaControl.instance.control3();
                                 auxFogao=true;
                                 }
                              }

@@ -2346,6 +2346,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 948869540}
+        m_TargetAssemblyTypeName: AudioController, Assembly-CSharp
+        m_MethodName: efeitoInterface
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 7c28e486c9a373f4ea952ca44d0918fb,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &137666730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4699,7 +4712,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 231711020}
   m_LocalRotation: {x: -0.48265138, y: -0.51676655, z: -0.51676655, w: 0.48265138}
-  m_LocalPosition: {x: -0.045, y: 0.5955, z: -0.216}
+  m_LocalPosition: {x: -0.045, y: 0.449, z: -0.216}
   m_LocalScale: {x: 0.12796593, y: 0.1640658, z: 0.10250506}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5609,32 +5622,32 @@ PrefabInstance:
     - target: {fileID: 6258225421178589130, guid: ba9cf485aaeb96040945f8c2ed9b3d0f,
         type: 3}
       propertyPath: m_Size.x
-      value: 2.4989223
+      value: 1.9243932
       objectReference: {fileID: 0}
     - target: {fileID: 6258225421178589130, guid: ba9cf485aaeb96040945f8c2ed9b3d0f,
         type: 3}
       propertyPath: m_Size.y
-      value: 1
+      value: 0.8322798
       objectReference: {fileID: 0}
     - target: {fileID: 6258225421178589130, guid: ba9cf485aaeb96040945f8c2ed9b3d0f,
         type: 3}
       propertyPath: m_Size.z
-      value: 1.7435076
+      value: 0.9640284
       objectReference: {fileID: 0}
     - target: {fileID: 6258225421178589130, guid: ba9cf485aaeb96040945f8c2ed9b3d0f,
         type: 3}
       propertyPath: m_Center.x
-      value: 0.74945784
+      value: 1.0367174
       objectReference: {fileID: 0}
     - target: {fileID: 6258225421178589130, guid: ba9cf485aaeb96040945f8c2ed9b3d0f,
         type: 3}
       propertyPath: m_Center.y
-      value: 0
+      value: -0.08385989
       objectReference: {fileID: 0}
     - target: {fileID: 6258225421178589130, guid: ba9cf485aaeb96040945f8c2ed9b3d0f,
         type: 3}
       propertyPath: m_Center.z
-      value: -0.05623477
+      value: -0.4459751
       objectReference: {fileID: 0}
     - target: {fileID: 6258225421178589130, guid: ba9cf485aaeb96040945f8c2ed9b3d0f,
         type: 3}
@@ -20615,7 +20628,7 @@ PrefabInstance:
     - target: {fileID: 6258225421178589130, guid: ba9cf485aaeb96040945f8c2ed9b3d0f,
         type: 3}
       propertyPath: m_Size.x
-      value: 1.5009528
+      value: 1.3048282
       objectReference: {fileID: 0}
     - target: {fileID: 6258225421178589130, guid: ba9cf485aaeb96040945f8c2ed9b3d0f,
         type: 3}
@@ -20625,12 +20638,12 @@ PrefabInstance:
     - target: {fileID: 6258225421178589130, guid: ba9cf485aaeb96040945f8c2ed9b3d0f,
         type: 3}
       propertyPath: m_Size.z
-      value: 1.4842279
+      value: 1.4842281
       objectReference: {fileID: 0}
     - target: {fileID: 6258225421178589130, guid: ba9cf485aaeb96040945f8c2ed9b3d0f,
         type: 3}
       propertyPath: m_Center.x
-      value: 0.25047538
+      value: 0.1523793
       objectReference: {fileID: 0}
     - target: {fileID: 6258225421178589130, guid: ba9cf485aaeb96040945f8c2ed9b3d0f,
         type: 3}
@@ -20640,7 +20653,7 @@ PrefabInstance:
     - target: {fileID: 6258225421178589130, guid: ba9cf485aaeb96040945f8c2ed9b3d0f,
         type: 3}
       propertyPath: m_Center.z
-      value: -0.049088895
+      value: -0.047531158
       objectReference: {fileID: 0}
     - target: {fileID: 6258225421178589130, guid: ba9cf485aaeb96040945f8c2ed9b3d0f,
         type: 3}
@@ -29799,7 +29812,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 982877819}
   m_LocalRotation: {x: -0.48265138, y: -0.51676655, z: -0.51676655, w: 0.48265138}
-  m_LocalPosition: {x: -0.063, y: 0.5955, z: -0.02}
+  m_LocalPosition: {x: -0.063, y: 0.449, z: -0.02}
   m_LocalScale: {x: 0.12796593, y: 0.1640658, z: 0.10250506}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -36032,6 +36045,19 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 2031891646}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 948869540}
+        m_TargetAssemblyTypeName: AudioController, Assembly-CSharp
+        m_MethodName: efeitoInterface
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 7c28e486c9a373f4ea952ca44d0918fb,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -46540,7 +46566,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1549239441}
   m_LocalRotation: {x: -0.48265138, y: -0.51676655, z: -0.51676655, w: 0.48265138}
-  m_LocalPosition: {x: -0.081, y: 0.5955, z: 0.172}
+  m_LocalPosition: {x: -0.081, y: 0.449, z: 0.172}
   m_LocalScale: {x: 0.12796593, y: 0.1640658, z: 0.10250506}
   m_ConstrainProportionsScale: 0
   m_Children:

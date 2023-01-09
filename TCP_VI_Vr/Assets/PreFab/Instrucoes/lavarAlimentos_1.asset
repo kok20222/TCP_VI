@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 483f33546b29cff46b0212750af78b73, type: 3}
   m_Name: lavarAlimentos_1
   m_EditorClassIdentifier: 
-  life: 900
+  life: 1200
   level: 0
   destiction:
     nextState: 0900000007000000

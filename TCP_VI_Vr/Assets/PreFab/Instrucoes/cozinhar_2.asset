@@ -17,13 +17,13 @@ MonoBehaviour:
   destiction:
     nextState: 06000000
     mandatory:
-    - target: 1
+    - target: 0
       element: {fileID: 7426789148018181067, guid: 0b703b239cd46cc418278fec4ff7c55e,
         type: 3}
-    - target: 1
+    - target: 0
       element: {fileID: 9083206493745190036, guid: 55e0500c8afb1ae46aca455ee4dab773,
         type: 3}
-    - target: 1
+    - target: 0
       element: {fileID: 5220887850340931838, guid: 5bbf7a3b208c41d448f1d132a3ad146c,
         type: 3}
     bonus: []
