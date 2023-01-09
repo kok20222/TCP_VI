@@ -2346,19 +2346,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 948869540}
-        m_TargetAssemblyTypeName: AudioController, Assembly-CSharp
-        m_MethodName: efeitoInterface
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: 79d3b24582adbdb4691c1886694c33a4,
-            type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &137666730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13474,6 +13461,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -1686999422594245939, guid: bf57667639ff7af43beaa159810f6804,
+        type: 3}
+      propertyPath: m_TagString
+      value: lixo
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: bf57667639ff7af43beaa159810f6804,
         type: 3}
@@ -36045,19 +36037,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 948869540}
-        m_TargetAssemblyTypeName: AudioController, Assembly-CSharp
-        m_MethodName: efeitoInterface
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: 79d3b24582adbdb4691c1886694c33a4,
-            type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1316641228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40249,6 +40228,8 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 6a23b77b98ae6ed40be1037fea2333db, type: 2}
     - {fileID: 11400000, guid: c73228e8d9f1b1e4cbc77614eda6ceea, type: 2}
     - {fileID: 11400000, guid: 7cb48e8153f918b47971b22c10d875c2, type: 2}
+    - {fileID: 11400000, guid: e797ab2848fb40e47ac09bc201a9f1ff, type: 2}
+    - {fileID: 11400000, guid: 80a191ce080ac04418151efefb6cab0a, type: 2}
   eventFeedback:
     m_PersistentCalls:
       m_Calls:

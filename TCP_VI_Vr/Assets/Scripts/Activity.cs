@@ -74,7 +74,7 @@ namespace ActivitSystem
                     break;
                 case ActivityState.does:
                     {
-                        countTime -= Time.deltaTime;
+                        countTime -= Time.deltaTime*300;
                         if(taskName=="maquina"){
                             Maquina.instance.lavarroupa1.text =Contador1.FormatarTempo((int)countTime);
                             Maquina.instance.SETAS[0].SetActive(false);
@@ -89,26 +89,25 @@ namespace ActivitSystem
                         }
                         if(taskName=="varal"){
                             Varal.instance.secarRoupa.text =Contador2.FormatarTempo((int)countTime);
+                            
                         }
                         if(taskName=="comidaLavar"||taskName=="comidaCortar"||taskName=="comidaCozinhar"){
                             Fogao.instance.comidaText.text =Contador3.FormatarTempo((int)countTime);
                         }
                         if(taskName=="comidaLavar"){
-                                areasCozinhaControl.instance.control();
+                                
                                 if(auxFogao==false){
                                 AudioController.instance.comida1.Play();
                                 auxFogao=true;
                                 }
                              }
                              if(taskName=="comidaCortar"){
-                                areasCozinhaControl.instance.control2();
                                 if(auxFogao==false){
                                 AudioController.instance.comida2.Play();
                                 auxFogao=true;
                                 }
                              }
                              if(taskName=="comidaCozinhar"){
-                                areasCozinhaControl.instance.control3();
                                 if(auxFogao==false){
                                 AudioController.instance.comida3.Play();
                                 auxFogao=true;
@@ -128,12 +127,15 @@ namespace ActivitSystem
                              if(taskName=="comidaLavar"){
                                 Fogao.instance.comida=2;
                                 AudioController.instance.comida1.Stop();
+                                areasCozinhaControl.instance.control();
                              }
                              if(taskName=="comidaCortar"){
+                                areasCozinhaControl.instance.control2();
                                 Fogao.instance.comida=3;
                                 AudioController.instance.comida2.Stop();
                              }
                              if(taskName=="comidaCozinhar"){
+                                areasCozinhaControl.instance.control3();
                                 Fogao.instance.comida=4;
                                 AudioController.instance.comida3.Stop();
                              }

@@ -23,7 +23,7 @@ public class Lixo : MonoBehaviour
     void Update()
     {
 
-        lixotexto1.text =  lixos + "/4";
+        lixotexto1.text =  lixos + "/5";
     if(lixos==5){
         MenuController.instance.mental.value=1f;
         //MenuController.instance.panelTrue(MenuController.instance.checks[0]);

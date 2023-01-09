@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 483f33546b29cff46b0212750af78b73, type: 3}
   m_Name: prepararAlimento_1
   m_EditorClassIdentifier: 
-  life: 5
+  life: 1500
   level: 1
   destiction:
     nextState: 0b0000000100000007000000

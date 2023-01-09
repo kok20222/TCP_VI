@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 483f33546b29cff46b0212750af78b73, type: 3}
   m_Name: lavarRoupa_0
   m_EditorClassIdentifier: 
-  life: 10
+  life: 3600
   level: 0
   destiction:
     nextState: 010000000900000002000000
