@@ -30,7 +30,7 @@ public class AudioController : MonoBehaviour
             comida1.volume = vol2.value*2;
             comida2.volume = vol2.value*2;
             comida3.volume = vol2.value*2;
-            geladeira.volume = vol2.value;
+            geladeira.volume = vol2.value/2;
             efxCena.volume = vol2.value*2;
             acabandoTempo.volume = vol2.value*2;
     }

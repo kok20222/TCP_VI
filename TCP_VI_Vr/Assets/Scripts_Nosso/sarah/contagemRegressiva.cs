@@ -35,6 +35,18 @@ public class contagemRegressiva : MonoBehaviour
             }
         }
     }
+    public void Contagem2(float valor)
+    {
+        if (IsRunning)
+        {
+            tempoTotal -= Time.deltaTime*valor;
+            if (tempoTotal <= 0)
+            {
+                IsRunning = false;
+                TempoZerado = true;
+            }
+        }
+    }
     public string FormatarTempo(int val)
     {
         int Seg = val % 60;

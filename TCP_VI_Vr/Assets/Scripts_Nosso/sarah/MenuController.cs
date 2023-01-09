@@ -91,7 +91,7 @@ public class MenuController : MonoBehaviour
         TextTime1Ui.SetActive(true);
         iniciarBtn.SetActive(false);
         valor = v;
-        Contador1.IniciarContador((int)valor);
+        Contador1.IniciarContador((int)86400f);
     }
 
     public void chooseMov(int i){
@@ -118,7 +118,7 @@ public class MenuController : MonoBehaviour
         Debug.Log("cond: "+vitoryCond);
         if (Contador1.IsRunning)
         {
-            Contador1.Contagem(); // Contando...
+            Contador1.Contagem2(valor); // Contando...
             TextTime1.text = "Tempo:  " + Contador1.FormatarTempo((int)Contador1.tempoTotal);
              TextTimeHand.text = "Tempo:  " + Contador1.FormatarTempo((int)Contador1.tempoTotal);
             
