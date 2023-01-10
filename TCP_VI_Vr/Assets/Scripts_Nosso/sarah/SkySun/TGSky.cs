@@ -15,7 +15,7 @@ public class TGSky : MonoBehaviour
     public AnimationCurve lightAngleCurve;
 
     [Header("------ Setup")]
-    [Range(3, 24)] public float hour;
+    [Range(6, 24)] public float hour;
     [Range(-90, 90)] public float longitude;
     [Range(1, 22)] public float nightDuration = 2;
     public float dayMinutesDuration = 0;
