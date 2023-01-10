@@ -10,7 +10,7 @@ public class MenuController : MonoBehaviour
     public TMP_InputField tempoInput;
     public TMP_Text SOBRA;
     public GameObject[] checks;
-    public GameObject macaneta;
+    //public GameObject macaneta;
     public GameObject TextTime1Ui;
     public GameObject vitoriaUI;
     public GameObject derrotaUI;
@@ -87,7 +87,7 @@ public class MenuController : MonoBehaviour
     }
     public void contagemRegressiva(float v)
     {
-        macaneta.SetActive(true);
+        //macaneta.SetActive(true);
         TextTime1Ui.SetActive(true);
         iniciarBtn.SetActive(false);
         valor = v;
