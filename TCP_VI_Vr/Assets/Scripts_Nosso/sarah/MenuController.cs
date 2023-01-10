@@ -122,7 +122,7 @@ public class MenuController : MonoBehaviour
             TextTime1.text = "Tempo:  " + Contador1.FormatarTempo((int)Contador1.tempoTotal);
              TextTimeHand.text = "Tempo:  " + Contador1.FormatarTempo((int)Contador1.tempoTotal);
             
-             if(Contador1.tempoTotal<10f && Contador1.tempoTotal>=9.8f ){
+             if(Contador1.tempoTotal<2880f && Contador1.tempoTotal>=2879f ){
                 AudioController.instance.acabandoTempo.Play();
              }
 
