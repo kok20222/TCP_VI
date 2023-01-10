@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
+
 #if UNITY_EDITOR
 [ExecuteInEditMode]
 #endif
@@ -42,6 +43,12 @@ public class TGSky : MonoBehaviour
     private Transform mainCamera;
     private float t = 0;
     private float dt = 0;
+    public GameObject lampada;
+    public GameObject lampada5;
+    public GameObject lampada2;
+    public GameObject lampada3;
+    public GameObject lampada4;
+    public GameObject lampada6;
 
 #if UNITY_EDITOR
     private float lastNightDuration = -1;
@@ -86,6 +93,11 @@ public class TGSky : MonoBehaviour
         {
             lastNightDuration = nightDuration;
             UpdateGradients();
+        }
+
+        if(isNight == true){
+            acender();
+
         }
 #endif
         lastHour = hour;
@@ -193,4 +205,16 @@ public class TGSky : MonoBehaviour
         }
     }
 #endif
+
+
+public void acender(){
+
+lampada.SetActive(true);
+lampada2.SetActive(true);
+lampada3.SetActive(true);
+lampada4.SetActive(true);
+lampada5.SetActive(true);
+lampada6.SetActive(true);
+
+}
 }
