@@ -18,7 +18,7 @@ public class TGSky : MonoBehaviour
     [Range(3, 24)] public float hour;
     [Range(-90, 90)] public float longitude;
     [Range(1, 22)] public float nightDuration = 2;
-    public float dayMinutesDuration = 10;
+    public float dayMinutesDuration = 0;
     public bool animate;
 
 #if UNITY_EDITOR
@@ -52,7 +52,11 @@ public class TGSky : MonoBehaviour
     {
 
     }
-
+    
+    //--------------------------------------------------------------------------
+    public void timeDay(float value){
+       dayMinutesDuration = value;
+    }
     //--------------------------------------------------------------------------
     private void OnEnable()
     {
@@ -68,7 +72,7 @@ public class TGSky : MonoBehaviour
         lastNightDuration = -1;
 #endif
     }
-
+    
     //--------------------------------------------------------------------------
     public void Update()
     {
@@ -88,7 +92,7 @@ public class TGSky : MonoBehaviour
         lastLongitude = longitude;
         dt = Time.deltaTime;
 
-        if (animate && Application.isPlaying)
+        if (animate && Application.isPlaying && dayMinutesDuration!=0)
         {
             hour += dt * 24.0f / (60 * dayMinutesDuration);
         }
